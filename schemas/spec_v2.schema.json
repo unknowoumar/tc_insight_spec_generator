@@ -1,0 +1,418 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tc-insight.io/schema/spec-v2.json",
+  "title": "TC Insight Spec V2",
+  "type": "object",
+  "required": [
+    "n",
+    "v",
+    "s"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "n": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "v": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "s": {
+      "$ref": "#/$defs/sections"
+    },
+    "l": {
+      "$ref": "#/$defs/lists"
+    },
+    "a": {
+      "$ref": "#/$defs/anomalies"
+    }
+  },
+  "$defs": {
+    "sections": {
+      "type": "object",
+      "patternProperties": {
+        "^[A-Z]+$": {
+          "type": "object",
+          "required": [
+            "n",
+            "p"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "n": {
+              "type": "string"
+            },
+            "v": {
+              "$ref": "#/$defs/ruleArray"
+            },
+            "p": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/questionBlock"
+              }
+            }
+          }
+        }
+      }
+    },
+    "questionBlock": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "additionalProperties": {
+        "$ref": "#/$defs/question"
+      }
+    },
+    "question": {
+      "type": "object",
+      "required": [
+        "n",
+        "label",
+        "t"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "n": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "label": {
+          "type": "string"
+        },
+        "o": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "e",
+              "b",
+              "u",
+              "h"
+            ]
+          }
+        },
+        "t": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 1,
+          "items": {
+            "$ref": "#/$defs/questionType"
+          }
+        },
+        "v": {
+          "$ref": "#/$defs/ruleArray"
+        },
+        "r": {
+          "type": "object"
+        }
+      }
+    },
+    "questionType": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/typeO"
+        },
+        {
+          "$ref": "#/$defs/typeT"
+        },
+        {
+          "$ref": "#/$defs/typeTM"
+        },
+        {
+          "$ref": "#/$defs/typeN"
+        },
+        {
+          "$ref": "#/$defs/typeC"
+        },
+        {
+          "$ref": "#/$defs/typeI"
+        },
+        {
+          "$ref": "#/$defs/typeA"
+        },
+        {
+          "$ref": "#/$defs/typeNote"
+        }
+      ]
+    },
+    "typeO": {
+      "type": "object",
+      "required": [
+        "t",
+        "o"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "t": {
+          "const": "O"
+        },
+        "o": {
+          "type": "string"
+        },
+        "c": {
+          "type": "integer",
+          "enum": [
+            1
+          ]
+        }
+      }
+    },
+    "typeT": {
+      "type": "object",
+      "required": [
+        "t"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "t": {
+          "const": "T"
+        },
+        "-": {
+          "type": "integer"
+        },
+        "+": {
+          "type": "integer"
+        },
+        "d": {
+          "type": "string"
+        },
+        "regex": {
+          "type": "string"
+        },
+        "ti": {
+          "type": "string"
+        }
+      }
+    },
+    "typeTM": {
+      "type": "object",
+      "required": [
+        "t"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "t": {
+          "const": "TM"
+        },
+        "-": {
+          "type": "integer"
+        },
+        "d": {
+          "type": "string"
+        }
+      }
+    },
+    "typeN": {
+      "type": "object",
+      "required": [
+        "t"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "t": {
+          "const": "N"
+        },
+        "-": {
+          "type": "number"
+        },
+        "+": {
+          "type": "number"
+        },
+        "d": {
+          "type": "number"
+        }
+      }
+    },
+    "typeC": {
+      "type": "object",
+      "required": [
+        "t",
+        "o"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "t": {
+          "const": "C"
+        },
+        "o": {
+          "type": "string"
+        },
+        "-": {
+          "type": "integer"
+        },
+        "+": {
+          "type": "integer"
+        }
+      }
+    },
+    "typeI": {
+      "type": "object",
+      "required": [
+        "t"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "t": {
+          "const": "I"
+        },
+        "-": {
+          "type": "integer"
+        }
+      }
+    },
+    "typeA": {
+      "type": "object",
+      "required": [
+        "t",
+        "i"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "t": {
+          "const": "A"
+        },
+        "i": {
+          "enum": [
+            "TS",
+            "LN",
+            "FN",
+            "UID",
+            "TID",
+            "DT",
+            "PH",
+            "GPS"
+          ]
+        }
+      }
+    },
+    "typeNote": {
+      "type": "object",
+      "required": [
+        "t"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "t": {
+          "const": "-"
+        }
+      }
+    },
+    "ruleArray": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/rule"
+      }
+    },
+    "rule": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/condition"
+        },
+        {
+          "type": "object",
+          "required": [
+            "or"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "or": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/condition"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "condition": {
+      "type": "object",
+      "required": [
+        "r",
+        "o",
+        "t",
+        "v"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "r": {
+          "type": "string"
+        },
+        "o": {
+          "enum": [
+            "=",
+            "!",
+            ">",
+            "<",
+            ">=",
+            "<=",
+            "e",
+            "!e"
+          ]
+        },
+        "t": {
+          "enum": [
+            "v",
+            "a"
+          ]
+        },
+        "v": {}
+      }
+    },
+    "lists": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "v",
+            "n"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "v": {
+              "type": "string"
+            },
+            "n": {
+              "type": "object",
+              "minProperties": 1,
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "anomalies": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "w",
+          "r"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "w": {
+            "type": "integer"
+          },
+          "r": {
+            "$ref": "#/$defs/ruleArray"
+          }
+        }
+      }
+    }
+  }
+}

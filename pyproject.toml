@@ -1,0 +1,12 @@
+[project]
+name = "tc-insight-spec-generator"
+version = "0.1.0"
+dependencies = [
+  "pandas",
+  "openpyxl",
+  "jsonschema",
+  "pydantic"
+]
+
+[project.scripts]
+tc-spec = "tc_spec.cli:main"

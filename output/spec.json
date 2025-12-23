@@ -1,0 +1,4707 @@
+{
+  "n": "TC Insight Spec",
+  "v": "2.0.0",
+  "s": {
+    "A": {
+      "n": "A",
+      "p": [
+        {
+          "10": {
+            "n": {
+              "SYS": "What region are you located?"
+            },
+            "label": "A-10",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "20": {
+            "n": {
+              "SYS": "What prefecture are you located?"
+            },
+            "label": "A-20",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "What sub-prefecture/commune are you located?"
+            },
+            "label": "A-30",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "What quartier are you located?"
+            },
+            "label": "A-40",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "50": {
+            "n": {
+              "SYS": "What is the block code?"
+            },
+            "label": "A-50",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "60": {
+            "n": {
+              "SYS": "What is the sub-block code?"
+            },
+            "label": "A-60",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "70": {
+            "n": {
+              "SYS": "What is the Zip Code (Code postal)?"
+            },
+            "label": "A-70",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "D": {
+      "n": "D",
+      "p": [
+        {
+          "10": {
+            "n": {
+              "SYS": "Where do you mainly source your JTI cigarettes from?"
+            },
+            "label": "D-10",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "11": {
+            "n": {
+              "SYS": "How do you make the majority of your orders?"
+            },
+            "label": "D-11",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "12": {
+            "n": {
+              "SYS": "How often do you buy, get delivered per week?"
+            },
+            "label": "D-12",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "13": {
+            "n": {
+              "SYS": "Are you happy with the order quantity and/or frequency?"
+            },
+            "label": "D-13",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "14": {
+            "n": {
+              "SYS": "What is the minimum quantity to order to get delivered by a supplier/wholesaler or distributor?"
+            },
+            "label": "D-14",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "15": {
+            "n": {
+              "SYS": "What are your payment conditions?"
+            },
+            "label": "D-15",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "16": {
+            "n": {
+              "SYS": "What type of credit do you get?"
+            },
+            "label": "D-16",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "17": {
+            "n": {
+              "SYS": "What is the maximum number of open invoices allowed?"
+            },
+            "label": "D-17",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "18": {
+            "n": {
+              "SYS": "How long is the credit in weeks?"
+            },
+            "label": "D-18",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "19": {
+            "n": {
+              "SYS": "What is the name of your official Wholesaler/Distributor?"
+            },
+            "label": "D-19",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "20": {
+            "n": {
+              "SYS": "Where do you mainly source your BAT cigarettes from?"
+            },
+            "label": "D-20",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "21": {
+            "n": {
+              "SYS": "How do you make the majority of your orders?"
+            },
+            "label": "D-21",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "22": {
+            "n": {
+              "SYS": "How often do you buy, get delivered per week?"
+            },
+            "label": "D-22",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "23": {
+            "n": {
+              "SYS": "Are you happy with the order quantity and/or frequency?"
+            },
+            "label": "D-23",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "24": {
+            "n": {
+              "SYS": "What is the minimum quantity to order to get delivered by a supplier/wholesaler or distributor?"
+            },
+            "label": "D-24",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "25": {
+            "n": {
+              "SYS": "What are your payment conditions?"
+            },
+            "label": "D-25",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "26": {
+            "n": {
+              "SYS": "What type of credit do you get?"
+            },
+            "label": "D-26",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "27": {
+            "n": {
+              "SYS": "What is the maximum number of open invoices allowed?"
+            },
+            "label": "D-27",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "28": {
+            "n": {
+              "SYS": "How long is the credit in weeks?"
+            },
+            "label": "D-28",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "29": {
+            "n": {
+              "SYS": "What is the name of your official Wholesaler/Distributor?"
+            },
+            "label": "D-29",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "Where do you mainly source your PMI cigarettes from?"
+            },
+            "label": "D-30",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "31": {
+            "n": {
+              "SYS": "How do you make the majority of your orders?"
+            },
+            "label": "D-31",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "32": {
+            "n": {
+              "SYS": "How often do you buy, get delivered per week?"
+            },
+            "label": "D-32",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "33": {
+            "n": {
+              "SYS": "Are you happy with the order quantity and/or frequency?"
+            },
+            "label": "D-33",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "34": {
+            "n": {
+              "SYS": "What is the minimum quantity to order to get delivered by a supplier/wholesaler or distributor?"
+            },
+            "label": "D-34",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "35": {
+            "n": {
+              "SYS": "What are your payment conditions?"
+            },
+            "label": "D-35",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "36": {
+            "n": {
+              "SYS": "What type of credit do you get?"
+            },
+            "label": "D-36",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "37": {
+            "n": {
+              "SYS": "What is the maximum number of open invoices allowed?"
+            },
+            "label": "D-37",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "38": {
+            "n": {
+              "SYS": "How long is the credit in weeks?"
+            },
+            "label": "D-38",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "39": {
+            "n": {
+              "SYS": "What is the name of your official Wholesaler/Distributor?"
+            },
+            "label": "D-39",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "Where do you mainly source your Oriental cigarettes from?"
+            },
+            "label": "D-40",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "41": {
+            "n": {
+              "SYS": "How do you make the majority of your orders?"
+            },
+            "label": "D-41",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "42": {
+            "n": {
+              "SYS": "How often do you buy, get delivered per week?"
+            },
+            "label": "D-42",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "43": {
+            "n": {
+              "SYS": "Are you happy with the order quantity and/or frequency?"
+            },
+            "label": "D-43",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "44": {
+            "n": {
+              "SYS": "What is the minimum quantity to order to get delivered by a supplier/wholesaler or distributor?"
+            },
+            "label": "D-44",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "45": {
+            "n": {
+              "SYS": "What are your payment conditions?"
+            },
+            "label": "D-45",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "46": {
+            "n": {
+              "SYS": "What type of credit do you get?"
+            },
+            "label": "D-46",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "47": {
+            "n": {
+              "SYS": "What is the maximum number of open invoices allowed?"
+            },
+            "label": "D-47",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "48": {
+            "n": {
+              "SYS": "How long is the credit in weeks?"
+            },
+            "label": "D-48",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "49": {
+            "n": {
+              "SYS": "What is the name of your official Wholesaler/Distributor?"
+            },
+            "label": "D-49",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "50": {
+            "n": {
+              "SYS": "Where do you mainly source your KT&G cigarettes from?(UTC new name)"
+            },
+            "label": "D-50",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "51": {
+            "n": {
+              "SYS": "How do you make the majority of your orders?"
+            },
+            "label": "D-51",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "52": {
+            "n": {
+              "SYS": "How often do you buy, get delivered per week?"
+            },
+            "label": "D-52",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "53": {
+            "n": {
+              "SYS": "Are you happy with the order quantity and/or frequency?"
+            },
+            "label": "D-53",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "54": {
+            "n": {
+              "SYS": "What is the minimum quantity to order to get delivered by a supplier/wholesaler or distributor?"
+            },
+            "label": "D-54",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "55": {
+            "n": {
+              "SYS": "What are your payment conditions?"
+            },
+            "label": "D-55",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "56": {
+            "n": {
+              "SYS": "What type of credit do you get?"
+            },
+            "label": "D-56",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "57": {
+            "n": {
+              "SYS": "What is the maximum number of open invoices allowed?"
+            },
+            "label": "D-57",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "58": {
+            "n": {
+              "SYS": "How long is the credit in weeks?"
+            },
+            "label": "D-58",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "59": {
+            "n": {
+              "SYS": "What is the name of your official Wholesaler/Distributor?"
+            },
+            "label": "D-59",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "60": {
+            "n": {
+              "SYS": "Where do you mainly source your  cigarettes from?"
+            },
+            "label": "D-60",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "61": {
+            "n": {
+              "SYS": "How do you make the majority of your orders?"
+            },
+            "label": "D-61",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "62": {
+            "n": {
+              "SYS": "How often do you buy, get delivered per week?"
+            },
+            "label": "D-62",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "63": {
+            "n": {
+              "SYS": "Are you happy with the order quantity and/or frequency?"
+            },
+            "label": "D-63",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "64": {
+            "n": {
+              "SYS": "What is the minimum quantity to order to get delivered by a supplier/wholesaler or distributor?"
+            },
+            "label": "D-64",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "65": {
+            "n": {
+              "SYS": "What are your payment conditions?"
+            },
+            "label": "D-65",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "66": {
+            "n": {
+              "SYS": "What type of credit do you get?"
+            },
+            "label": "D-66",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "67": {
+            "n": {
+              "SYS": "What is the maximum number of open invoices allowed?"
+            },
+            "label": "D-67",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "68": {
+            "n": {
+              "SYS": "How long is the credit in weeks?"
+            },
+            "label": "D-68",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "69": {
+            "n": {
+              "SYS": "What is the name of your official Wholesaler/Distributor?"
+            },
+            "label": "D-69",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "70": {
+            "n": {
+              "SYS": "Where do you mainly source your  cigarettes from?"
+            },
+            "label": "D-70",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "71": {
+            "n": {
+              "SYS": "How do you make the majority of your orders?"
+            },
+            "label": "D-71",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "72": {
+            "n": {
+              "SYS": "How often do you buy, get delivered per week?"
+            },
+            "label": "D-72",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "73": {
+            "n": {
+              "SYS": "Are you happy with the order quantity and/or frequency?"
+            },
+            "label": "D-73",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "74": {
+            "n": {
+              "SYS": "What is the minimum quantity to order to get delivered by a supplier/wholesaler or distributor?"
+            },
+            "label": "D-74",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "75": {
+            "n": {
+              "SYS": "What are your payment conditions?"
+            },
+            "label": "D-75",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "76": {
+            "n": {
+              "SYS": "What type of credit do you get?"
+            },
+            "label": "D-76",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "77": {
+            "n": {
+              "SYS": "What is the maximum number of open invoices allowed?"
+            },
+            "label": "D-77",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "78": {
+            "n": {
+              "SYS": "How long is the credit in weeks?"
+            },
+            "label": "D-78",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "79": {
+            "n": {
+              "SYS": "What is the name of your official Wholesaler/Distributor?"
+            },
+            "label": "D-79",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "80": {
+            "n": {
+              "SYS": "Where do you mainly source your  cigarettes from?"
+            },
+            "label": "D-80",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "81": {
+            "n": {
+              "SYS": "How do you make the majority of your orders?"
+            },
+            "label": "D-81",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "82": {
+            "n": {
+              "SYS": "How often do you buy, get delivered per week?"
+            },
+            "label": "D-82",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "83": {
+            "n": {
+              "SYS": "Are you happy with the order quantity and/or frequency?"
+            },
+            "label": "D-83",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "84": {
+            "n": {
+              "SYS": "What is the minimum quantity to order to get delivered by a supplier/wholesaler or distributor?"
+            },
+            "label": "D-84",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "85": {
+            "n": {
+              "SYS": "What are your payment conditions?"
+            },
+            "label": "D-85",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "86": {
+            "n": {
+              "SYS": "What type of credit do you get?"
+            },
+            "label": "D-86",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "87": {
+            "n": {
+              "SYS": "What is the maximum number of open invoices allowed?"
+            },
+            "label": "D-87",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "88": {
+            "n": {
+              "SYS": "How long is the credit in weeks?"
+            },
+            "label": "D-88",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "89": {
+            "n": {
+              "SYS": "What is the name of your official Wholesaler/Distributor?"
+            },
+            "label": "D-89",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "90": {
+            "n": {
+              "SYS": "Where do you mainly source your PMI cigarettes from?"
+            },
+            "label": "D-90",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "91": {
+            "n": {
+              "SYS": "How do you make the majority of your orders?"
+            },
+            "label": "D-91",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "92": {
+            "n": {
+              "SYS": "How often do you buy, get delivered per week?"
+            },
+            "label": "D-92",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "93": {
+            "n": {
+              "SYS": "Are you happy with the order quantity and/or frequency?"
+            },
+            "label": "D-93",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "94": {
+            "n": {
+              "SYS": "What is the minimum quantity to order to get delivered by a supplier/wholesaler or distributor?"
+            },
+            "label": "D-94",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "95": {
+            "n": {
+              "SYS": "What are your payment conditions?"
+            },
+            "label": "D-95",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "96": {
+            "n": {
+              "SYS": "What type of credit do you get?"
+            },
+            "label": "D-96",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "97": {
+            "n": {
+              "SYS": "What is the maximum number of open invoices allowed?"
+            },
+            "label": "D-97",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "98": {
+            "n": {
+              "SYS": "How long is the credit in weeks?"
+            },
+            "label": "D-98",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "99": {
+            "n": {
+              "SYS": "What is the name of your official Wholesaler/Distributor?"
+            },
+            "label": "D-99",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "100": {
+            "n": {
+              "SYS": "Which Sales Reps or merchandiser visit you regularly?"
+            },
+            "label": "D-100",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "101": {
+            "n": {
+              "SYS": "How many times per month does the JTI Sales Reps visit you?"
+            },
+            "label": "D-101",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "102": {
+            "n": {
+              "SYS": "How many times per month does the BAT Sales Reps visit you?"
+            },
+            "label": "D-102",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "103": {
+            "n": {
+              "SYS": "How many times per month does the PMI Sales Reps visit you?"
+            },
+            "label": "D-103",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "104": {
+            "n": {
+              "SYS": "How many times per month does the Oriental Sales Reps visit you?"
+            },
+            "label": "D-104",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "105": {
+            "n": {
+              "SYS": "How many times per month does the KT&G Sales Reps visit you?"
+            },
+            "label": "D-105",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "106": {
+            "n": {
+              "SYS": "How many times per month does the Other Sales Reps visit you?"
+            },
+            "label": "D-106",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "107": {
+            "n": {
+              "SYS": "How many times per month does the  Sales Reps visit you?"
+            },
+            "label": "D-107",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "108": {
+            "n": {
+              "SYS": "How many times per month does the  Sales Reps visit you?"
+            },
+            "label": "D-108",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "109": {
+            "n": {
+              "SYS": "How many times per month does the PMI Sales Reps visit you?"
+            },
+            "label": "D-109",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "200": {
+            "n": {
+              "SYS": "From how many suppliers do you source your JTI products?"
+            },
+            "label": "D-200",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "201": {
+            "n": {
+              "SYS": "From how many suppliers do you source your BAT products?"
+            },
+            "label": "D-201",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "202": {
+            "n": {
+              "SYS": "From how many suppliers do you source your  products?"
+            },
+            "label": "D-202",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "203": {
+            "n": {
+              "SYS": "From how many suppliers do you source your  products?"
+            },
+            "label": "D-203",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "204": {
+            "n": {
+              "SYS": "From how many suppliers do you source your  products?"
+            },
+            "label": "D-204",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "205": {
+            "n": {
+              "SYS": "From how many suppliers do you source your  products?"
+            },
+            "label": "D-205",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "206": {
+            "n": {
+              "SYS": "From how many suppliers do you source your  products?"
+            },
+            "label": "D-206",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "207": {
+            "n": {
+              "SYS": "From how many suppliers do you source your  products?"
+            },
+            "label": "D-207",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "208": {
+            "n": {
+              "SYS": "From how many suppliers do you source your PMI products?"
+            },
+            "label": "D-208",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "300": {
+            "n": {
+              "SYS": "How would you rate overall quality of service of your main JTI supplier?"
+            },
+            "label": "D-300",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "301": {
+            "n": {
+              "SYS": "How would you rate overall quality of service of your main BAT supplier?"
+            },
+            "label": "D-301",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "302": {
+            "n": {
+              "SYS": "How would you rate overall quality of service of your main  supplier?"
+            },
+            "label": "D-302",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "303": {
+            "n": {
+              "SYS": "How would you rate overall quality of service of your main  supplier?"
+            },
+            "label": "D-303",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "304": {
+            "n": {
+              "SYS": "How would you rate overall quality of service of your main  supplier?"
+            },
+            "label": "D-304",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "305": {
+            "n": {
+              "SYS": "How would you rate overall quality of service of your main  supplier?"
+            },
+            "label": "D-305",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "306": {
+            "n": {
+              "SYS": "How would you rate overall quality of service of your main  supplier?"
+            },
+            "label": "D-306",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "307": {
+            "n": {
+              "SYS": "How would you rate overall quality of service of your main  supplier?"
+            },
+            "label": "D-307",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "308": {
+            "n": {
+              "SYS": "How would you rate overall quality of service of your main PMI supplier?"
+            },
+            "label": "D-308",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "DFUQ": {
+      "n": "DFUQ",
+      "p": [
+        {
+          "10": {
+            "n": {
+              "SYS": "Who are your customers?"
+            },
+            "label": "DFUQ-10",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "20": {
+            "n": {
+              "SYS": "Do you help with any supplier activations/promotions?"
+            },
+            "label": "DFUQ-20",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "Do you have a sales/ delivery team?"
+            },
+            "label": "DFUQ-30",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "Does your sales team work with a routing/journey plan?"
+            },
+            "label": "DFUQ-40",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "50": {
+            "n": {
+              "SYS": "What are their responsibilities?"
+            },
+            "label": "DFUQ-50",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "60": {
+            "n": {
+              "SYS": "How many people work for your business?"
+            },
+            "label": "DFUQ-60",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "70": {
+            "n": {
+              "SYS": "Do you offer credit terms?"
+            },
+            "label": "DFUQ-70",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "80": {
+            "n": {
+              "SYS": "How are your orders made?"
+            },
+            "label": "DFUQ-80",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "90": {
+            "n": {
+              "SYS": "Do you do sales forecasting?"
+            },
+            "label": "DFUQ-90",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "100": {
+            "n": {
+              "SYS": "How often do you buy per week(inbound stock)?"
+            },
+            "label": "DFUQ-100",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "110": {
+            "n": {
+              "SYS": "Do you measure your stock?"
+            },
+            "label": "DFUQ-110",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "130": {
+            "n": {
+              "SYS": "How many trucks do you have?"
+            },
+            "label": "DFUQ-130",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "140": {
+            "n": {
+              "SYS": "How many tricycles do you have?"
+            },
+            "label": "DFUQ-140",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "160": {
+            "n": {
+              "SYS": "Do you use a computer for your business?"
+            },
+            "label": "DFUQ-160",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "170": {
+            "n": {
+              "SYS": "Do you have internet?"
+            },
+            "label": "DFUQ-170",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "190": {
+            "n": {
+              "SYS": "Do you incentivise your sales reps?"
+            },
+            "label": "DFUQ-190",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "200": {
+            "n": {
+              "SYS": "Do you have an overview of your customers and their accounts?"
+            },
+            "label": "DFUQ-200",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "210": {
+            "n": {
+              "SYS": "Do you have all-day power?"
+            },
+            "label": "DFUQ-210",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "220": {
+            "n": {
+              "SYS": "What are the most important?"
+            },
+            "label": "DFUQ-220",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "230": {
+            "n": {
+              "SYS": "How important are they?"
+            },
+            "label": "DFUQ-230",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "E": {
+      "n": "E",
+      "p": [
+        {
+          "10": {
+            "n": {
+              "SYS": "Note - INTERVIEWER READ THE FOLLOWING TO OWNER/MANAGER:\nThank you for participating in our survey. In the coming days, you may be contacted by my supervisor to assess the quality of my work and to answer any questions you may have with respect to this interview."
+            },
+            "label": "E-10",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "20": {
+            "n": {
+              "SYS": "May I take a picture of the outside and inside of your outlet?"
+            },
+            "label": "E-20",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "21": {
+            "n": {
+              "SYS": "Take a picture of the inside"
+            },
+            "label": "E-21",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "22": {
+            "n": {
+              "SYS": "Take a picture of the outside"
+            },
+            "label": "E-22",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "23": {
+            "n": {
+              "SYS": "Take a picture of the menu"
+            },
+            "label": "E-23",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "24": {
+            "n": {
+              "SYS": "Take a picture of POSM"
+            },
+            "label": "E-24",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "25": {
+            "n": {
+              "SYS": "Take a picture of draught beer"
+            },
+            "label": "E-25",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "26": {
+            "n": {
+              "SYS": "Take a picture of chiller"
+            },
+            "label": "E-26",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "27": {
+            "n": {
+              "SYS": "Take a picture of the serial number on fridge 1"
+            },
+            "label": "E-27",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "28": {
+            "n": {
+              "SYS": "Take a picture of the serial number on fridge 2"
+            },
+            "label": "E-28",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "29": {
+            "n": {
+              "SYS": "Take a picture of the serial number on fridge 3"
+            },
+            "label": "E-29",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "What would you say is the outlet quality?"
+            },
+            "label": "E-30",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "I hereby certify that this interview has been carried out by me according to the instructions I received."
+            },
+            "label": "E-40",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "50": {
+            "n": {
+              "SYS": "GPS Location of Outlet"
+            },
+            "label": "E-50",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "110": {
+            "n": {
+              "SYS": "May I confirm your telephone number? This way my managers may contact you to check that I have correctly captured the information about your business."
+            },
+            "label": "E-110",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "111": {
+            "n": {
+              "SYS": "Do you have an additional telephone number just in case? (DON'T INSERT COUNTRYCODE)"
+            },
+            "label": "E-111",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "112": {
+            "n": {
+              "SYS": "May I confirm your name and surname?"
+            },
+            "label": "E-112",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "113": {
+            "n": {
+              "SYS": "What is the manager/owner's name?"
+            },
+            "label": "E-113",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "60": {
+            "n": {
+              "SYS": "General Comments"
+            },
+            "label": "E-60",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "70": {
+            "n": {
+              "SYS": "Time stamp END Interview"
+            },
+            "label": "E-70",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "EFUQ": {
+      "n": "EFUQ",
+      "p": [
+        {
+          "10": {
+            "n": {
+              "SYS": "Time stamp END Interview?"
+            },
+            "label": "EFUQ-10",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "20": {
+            "n": {
+              "SYS": "I hereby certify that this interview has been carried out by me according to the instructions I received."
+            },
+            "label": "EFUQ-20",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "GPS location."
+            },
+            "label": "EFUQ-30",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "General Comments:"
+            },
+            "label": "EFUQ-40",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ENDFUQ": {
+      "n": "ENDFUQ",
+      "p": [
+        {
+          "1": {
+            "n": {
+              "SYS": "Do you wish to interview another consumer in this location?"
+            },
+            "label": "ENDFUQ-1",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "I": {
+      "n": "I",
+      "p": [
+        {
+          "10": {
+            "n": {
+              "SYS": "Find the most senior person available (Manager or Owner)"
+            },
+            "label": "I-10",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "20": {
+            "n": {
+              "SYS": "Who are you speaking to?"
+            },
+            "label": "I-20",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "INTRODUCTION: My name is .… Our company is operating a Trade Census. The objective is to better understand the tobacco market to eventually improve service to you as point of sale."
+            },
+            "label": "I-30",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "31": {
+            "n": {
+              "SYS": "A colleague of mine has recently visited you to conduct a Trade Census, and to insure we have quality information I am checking that we have correctly captured the information about your point of sale. I will be asking you a select number of questions for quality purposes."
+            },
+            "label": "I-31",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "Would you have a few minutes available to answer some questions about your business? This should not take long."
+            },
+            "label": "I-40",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "130": {
+            "n": {
+              "SYS": "Are most (over 50%) of your sales to:"
+            },
+            "label": "I-130",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "134": {
+            "n": {
+              "SYS": "Do you sell Cigarettes ?"
+            },
+            "label": "I-134",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "131": {
+            "n": {
+              "SYS": "Select the retailer channel"
+            },
+            "label": "I-131",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "132": {
+            "n": {
+              "SYS": "Select the Off-Trade channel"
+            },
+            "label": "I-132",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "133": {
+            "n": {
+              "SYS": "Select the wholesaler channel"
+            },
+            "label": "I-133",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "1351": {
+            "n": {
+              "SYS": "Are you also distributing to other retailer ?"
+            },
+            "label": "I-1351",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "1352": {
+            "n": {
+              "SYS": "Are you also distributing to consumers?"
+            },
+            "label": "I-1352",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "136": {
+            "n": {
+              "SYS": "Do you sell more in sticks, packs or bundle ?"
+            },
+            "label": "I-136",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "401": {
+            "n": {
+              "SYS": "Is the outlet part of a chain?"
+            },
+            "label": "I-401",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "402": {
+            "n": {
+              "SYS": "What chain does the outlet belong to?"
+            },
+            "label": "I-402",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "403": {
+            "n": {
+              "SYS": "What is the chain code?"
+            },
+            "label": "I-403",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "404": {
+            "n": {
+              "SYS": "What is the chain size  (# of outlets  belong to this chain)?"
+            },
+            "label": "I-404",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "405": {
+            "n": {
+              "SYS": "Does the outlet belong to Group/Group Owenrship?"
+            },
+            "label": "I-405",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "IFUQ": {
+      "n": "IFUQ",
+      "p": [
+        {
+          "1": {
+            "n": {
+              "SYS": "GPS"
+            },
+            "label": "IFUQ-1",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "10": {
+            "n": {
+              "SYS": "Confirm the channel that you are in"
+            },
+            "label": "IFUQ-10",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "20": {
+            "n": {
+              "SYS": "Who are you speaking to?"
+            },
+            "label": "IFUQ-20",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "INTRODUCTION: My name is .… A colleague of mine has recently visited you to collect information regarding a Trade Census. I would like to have follow-up qualititative survey withyourself and a small number of your consumers. The objective is to assist the company to better understand the market and eventually improve service to you and your consumers"
+            },
+            "label": "IFUQ-30",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "31": {
+            "n": {
+              "SYS": "INTRODUCTION: My name is ... A colleague of mine has recently visited you to collect information regarding a Trade Census. I would like to have follow-up qualitative survey with yourself. The objective is to assist the company to better understand the distribution landscape, your needs and eventually improve service to you."
+            },
+            "label": "IFUQ-31",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "32": {
+            "n": {
+              "SYS": "INTRODUCTION: My name is .… Our company is operating a market research analysis. The objective is to assist the company to better understand the market and the consummers. We would like to ask you a few questions as a consumer within this outlet, we will only take a few minutes of your time."
+            },
+            "label": "IFUQ-32",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "Would you have a few minutes available to answer some questions about your business? This should not take long."
+            },
+            "label": "IFUQ-40",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "M": {
+      "n": "M",
+      "p": [
+        {
+          "10": {
+            "n": {
+              "SYS": "Does the outlet have a checkout?"
+            },
+            "label": "M-10",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "20": {
+            "n": {
+              "SYS": "How many of the following type of checkout do you have?"
+            },
+            "label": "M-20",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "24": {
+            "n": {
+              "SYS": "On average, how many customers buy cigarettes from your outlet in a day?"
+            },
+            "label": "M-24",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "Which brand is the MOST visible in the outlet (outside/ inside) ?"
+            },
+            "label": "M-30",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "31": {
+            "n": {
+              "SYS": "Which brand has the MOST visible from inside the outlet?"
+            },
+            "label": "M-31",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "Does the outlet owner accept visibility items?"
+            },
+            "label": "M-40",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "42": {
+            "n": {
+              "SYS": "Is there already a display sign present? Select the type of sign present"
+            },
+            "label": "M-42",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "43": {
+            "n": {
+              "SYS": "Are pack being displayed ?"
+            },
+            "label": "M-43",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "44": {
+            "n": {
+              "SYS": "Select the brands that have a wall unit display present"
+            },
+            "label": "M-44",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "45": {
+            "n": {
+              "SYS": "Select the brands that have an overhead dispaly present"
+            },
+            "label": "M-45",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "46": {
+            "n": {
+              "SYS": "Select the brands that have an standing display present"
+            },
+            "label": "M-46",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "48": {
+            "n": {
+              "SYS": "Select the brands that have a wall painting present"
+            },
+            "label": "M-48",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "49": {
+            "n": {
+              "SYS": "Select the brands that have a free standing display sign present"
+            },
+            "label": "M-49",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "60": {
+            "n": {
+              "SYS": "Which of the following brands are present (listed) in the outlet?"
+            },
+            "label": "M-60",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "71": {
+            "n": {
+              "SYS": "What are your busiest times of day? (Maximum 2 responses)"
+            },
+            "label": "M-71",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "80": {
+            "n": {
+              "SYS": "Main gender of consumers"
+            },
+            "label": "M-80",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "90": {
+            "n": {
+              "SYS": "Main age of consumers"
+            },
+            "label": "M-90",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "100": {
+            "n": {
+              "SYS": "Check if following items are present in the outlet (premium indicators)"
+            },
+            "label": "M-100",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "116": {
+            "n": {
+              "SYS": "What 2 brands from the following list are the most important to you and your consumers?"
+            },
+            "label": "M-116",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "117": {
+            "n": {
+              "SYS": "What is the year of this outlet's establishment?"
+            },
+            "label": "M-117",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "118": {
+            "n": {
+              "SYS": "What is the number of full time employees?"
+            },
+            "label": "M-118",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "119": {
+            "n": {
+              "SYS": "Is there a storage room available?"
+            },
+            "label": "M-119",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "120": {
+            "n": {
+              "SYS": "What is the size of the storage room (in m2)?"
+            },
+            "label": "M-120",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "121": {
+            "n": {
+              "SYS": "How many days do you work per week?"
+            },
+            "label": "M-121",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "O": {
+      "n": "O",
+      "p": [
+        {
+          "10": {
+            "n": {
+              "SYS": "GPS location of outlet"
+            },
+            "label": "O-10",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "What is the address/landmark point that identifies the outlet? (e.g. NEAR THIS... NEXT TO... BEHIND THIS...)"
+            },
+            "label": "O-40",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "41": {
+            "n": {
+              "SYS": "What is the Street Name?"
+            },
+            "label": "O-41",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "42": {
+            "n": {
+              "SYS": "What is the Building No?"
+            },
+            "label": "O-42",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "43": {
+            "n": {
+              "SYS": "What is the Shop No?"
+            },
+            "label": "O-43",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "50": {
+            "n": {
+              "SYS": "What is the Enumerated Area you are in?"
+            },
+            "label": "O-50",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "60": {
+            "n": {
+              "SYS": "What is the name of the outlet?"
+            },
+            "label": "O-60",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "61": {
+            "n": {
+              "SYS": "What other name is this outlet known by?"
+            },
+            "label": "O-61",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "P": {
+      "n": "P",
+      "p": [
+        {
+          "10": {
+            "n": {
+              "SYS": "Surname"
+            },
+            "label": "P-10",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "20": {
+            "n": {
+              "SYS": "Name"
+            },
+            "label": "P-20",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "Enumerator Code"
+            },
+            "label": "P-30",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "Supervisor Code"
+            },
+            "label": "P-40",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "50": {
+            "n": {
+              "SYS": "Date"
+            },
+            "label": "P-50",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "60": {
+            "n": {
+              "SYS": "Telephone number"
+            },
+            "label": "P-60",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "70": {
+            "n": {
+              "SYS": "Time stamp START Interview"
+            },
+            "label": "P-70",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "V": {
+      "n": "V",
+      "p": [
+        {
+          "12": {
+            "n": {
+              "SYS": "Do you sell Soft Drinks?"
+            },
+            "label": "V-12",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "13": {
+            "n": {
+              "SYS": "Do you sell Beer?"
+            },
+            "label": "V-13",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "14": {
+            "n": {
+              "SYS": "Do you sell Spirits or Wines?"
+            },
+            "label": "V-14",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "10": {
+            "n": {
+              "SYS": "Do you sell shisha?"
+            },
+            "label": "V-10",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "20": {
+            "n": {
+              "SYS": "Do you sell evapes?"
+            },
+            "label": "V-20",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "Do you sell electronic cigarettes?"
+            },
+            "label": "V-30",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "50": {
+            "n": {
+              "SYS": "On an average week how much do you sell cigarettes (Tobacco) ?"
+            },
+            "label": "V-50",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "21": {
+            "n": {
+              "SYS": "Price per bundle/carton"
+            },
+            "label": "V-21",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "60": {
+            "n": {
+              "SYS": "On a normal day, how much do you sell for each cigarette (in packs or cartons)?"
+            },
+            "label": "V-60",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "61": {
+            "n": {
+              "SYS": "On an average week, how much do you sell in sticks  ?"
+            },
+            "label": "V-61",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "62": {
+            "n": {
+              "SYS": "On an average week, how much do you sell in packs  ?"
+            },
+            "label": "V-62",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "70": {
+            "n": {
+              "SYS": "On an average week how much do you sell of the following Shishas?"
+            },
+            "label": "V-70",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "VFUQ": {
+      "n": "VFUQ",
+      "p": [
+        {
+          "10": {
+            "n": {
+              "SYS": "Which gender is mostly represented in this outlet?"
+            },
+            "label": "VFUQ-10",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "20": {
+            "n": {
+              "SYS": "Which age group is mostly represented in this outlet?"
+            },
+            "label": "VFUQ-20",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "Which professional group is mostly represented in this outlet?"
+            },
+            "label": "VFUQ-30",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "What nationality is mostly present in this outlet?"
+            },
+            "label": "VFUQ-40",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "50": {
+            "n": {
+              "SYS": "Which educational level is mostly represented in this outlet?"
+            },
+            "label": "VFUQ-50",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "60": {
+            "n": {
+              "SYS": "What is the purchasing power of the consumer"
+            },
+            "label": "VFUQ-60",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "70": {
+            "n": {
+              "SYS": "Gender of the manager?"
+            },
+            "label": "VFUQ-70",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "80": {
+            "n": {
+              "SYS": "Age group of the manager?"
+            },
+            "label": "VFUQ-80",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "90": {
+            "n": {
+              "SYS": "What are the busiest hours of operation for you?"
+            },
+            "label": "VFUQ-90",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "100": {
+            "n": {
+              "SYS": "What are the busiest days of the week?"
+            },
+            "label": "VFUQ-100",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "110": {
+            "n": {
+              "SYS": "What are the busiest months of the year?"
+            },
+            "label": "VFUQ-110",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "120": {
+            "n": {
+              "SYS": "How many staff do you have working for your business?"
+            },
+            "label": "VFUQ-120",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "130": {
+            "n": {
+              "SYS": "How old is this outlet?"
+            },
+            "label": "VFUQ-130",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "140": {
+            "n": {
+              "SYS": "How long have you been visiting this outlet?"
+            },
+            "label": "VFUQ-140",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "150": {
+            "n": {
+              "SYS": "Which day(s) do you visit this type of outlet normally?"
+            },
+            "label": "VFUQ-150",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "160": {
+            "n": {
+              "SYS": "How frequent do you visit this outlet normally?"
+            },
+            "label": "VFUQ-160",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "170": {
+            "n": {
+              "SYS": "In what company do you visit this outlet normally?"
+            },
+            "label": "VFUQ-170",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "180": {
+            "n": {
+              "SYS": "What are your main interests/ hobbies"
+            },
+            "label": "VFUQ-180",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "190": {
+            "n": {
+              "SYS": "What is the build up of your household?"
+            },
+            "label": "VFUQ-190",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "200": {
+            "n": {
+              "SYS": "Is there an exterior area?"
+            },
+            "label": "VFUQ-200",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "210": {
+            "n": {
+              "SYS": "Is it bigger than the interior area?"
+            },
+            "label": "VFUQ-210",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "220": {
+            "n": {
+              "SYS": "How many fridges are there here in the outlet?"
+            },
+            "label": "VFUQ-220",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "230": {
+            "n": {
+              "SYS": "How many are used to stock beer?"
+            },
+            "label": "VFUQ-230",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "240": {
+            "n": {
+              "SYS": "For which main reasons do you visit this outlet?"
+            },
+            "label": "VFUQ-240",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "250": {
+            "n": {
+              "SYS": "What type of shopping are you doing?"
+            },
+            "label": "VFUQ-250",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "260": {
+            "n": {
+              "SYS": "Do you drink beer?"
+            },
+            "label": "VFUQ-260",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "270": {
+            "n": {
+              "SYS": "Why do you drink beer?"
+            },
+            "label": "VFUQ-270",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "280": {
+            "n": {
+              "SYS": "Why do you NOT drink beer?"
+            },
+            "label": "VFUQ-280",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "290": {
+            "n": {
+              "SYS": "Who do you buy beer for?"
+            },
+            "label": "VFUQ-290",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "300": {
+            "n": {
+              "SYS": "What beer is most important to you?"
+            },
+            "label": "VFUQ-300",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "310": {
+            "n": {
+              "SYS": "What is the main reason for you to drink beer?"
+            },
+            "label": "VFUQ-310",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "320": {
+            "n": {
+              "SYS": "Will you drink other beers?"
+            },
+            "label": "VFUQ-320",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "330": {
+            "n": {
+              "SYS": "Is the price of beer important to you?"
+            },
+            "label": "VFUQ-330",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "340": {
+            "n": {
+              "SYS": "Is alcohol content in beer important to you? If yes what is you ideal % content ?"
+            },
+            "label": "VFUQ-340",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "350": {
+            "n": {
+              "SYS": "Do you check the price of beer before ordering/ buying?"
+            },
+            "label": "VFUQ-350",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "360": {
+            "n": {
+              "SYS": "If you do not see your favorite beer, will you…?"
+            },
+            "label": "VFUQ-360",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "370": {
+            "n": {
+              "SYS": "Can the personel influence you order / purchase?"
+            },
+            "label": "VFUQ-370",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "380": {
+            "n": {
+              "SYS": "Do you like promotions?"
+            },
+            "label": "VFUQ-380",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "390": {
+            "n": {
+              "SYS": "What type of promotions would influence you to buy a brand? (ON)"
+            },
+            "label": "VFUQ-390",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "400": {
+            "n": {
+              "SYS": "What type of promotions would influence you to buy a brand? (OFF)"
+            },
+            "label": "VFUQ-400",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "410": {
+            "n": {
+              "SYS": "What are some of the challenges of your job?"
+            },
+            "label": "VFUQ-410",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "420": {
+            "n": {
+              "SYS": "Are you searching for an assortment of beer brands?"
+            },
+            "label": "VFUQ-420",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "430": {
+            "n": {
+              "SYS": "Which beer brands is most important to you?"
+            },
+            "label": "VFUQ-430",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "440": {
+            "n": {
+              "SYS": "Which services from your beer suppliers are most important to you?"
+            },
+            "label": "VFUQ-440",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "450": {
+            "n": {
+              "SYS": "Which services are most important but are not being provided satisfactorily?"
+            },
+            "label": "VFUQ-450",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "460": {
+            "n": {
+              "SYS": "What would you say helps your outlet to sell beer brands fastest?"
+            },
+            "label": "VFUQ-460",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "470": {
+            "n": {
+              "SYS": "What activations have the biggest impact on your sales?"
+            },
+            "label": "VFUQ-470",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "480": {
+            "n": {
+              "SYS": "What is the most important thing in the relationship with your beer supplier?"
+            },
+            "label": "VFUQ-480",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "490": {
+            "n": {
+              "SYS": "What do you expect from an outlet like this?"
+            },
+            "label": "VFUQ-490",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "500": {
+            "n": {
+              "SYS": "What do you drink if you don't drink beer?"
+            },
+            "label": "VFUQ-500",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "510": {
+            "n": {
+              "SYS": "Do you generally order the same beer brand?"
+            },
+            "label": "VFUQ-510",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "520": {
+            "n": {
+              "SYS": "Do you prefer bottles or cans?"
+            },
+            "label": "VFUQ-520",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "530": {
+            "n": {
+              "SYS": "What size do you prefer?"
+            },
+            "label": "VFUQ-530",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "540": {
+            "n": {
+              "SYS": "Do you prefer to drink beer warm or cold?"
+            },
+            "label": "VFUQ-540",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "550": {
+            "n": {
+              "SYS": "For which main reasons do customers visit your outlet?"
+            },
+            "label": "VFUQ-550",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "560": {
+            "n": {
+              "SYS": "How important are each of these beer brands in your outlet?"
+            },
+            "label": "VFUQ-560",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "620": {
+            "n": {
+              "SYS": "What are the most consumed beers?"
+            },
+            "label": "VFUQ-620",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "630": {
+            "n": {
+              "SYS": "How many bottles/cans do you drink when coming to this outlet?"
+            },
+            "label": "VFUQ-630",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "640": {
+            "n": {
+              "SYS": "How long do you normally stay?"
+            },
+            "label": "VFUQ-640",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "650": {
+            "n": {
+              "SYS": "Where were you before you came here?"
+            },
+            "label": "VFUQ-650",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "660": {
+            "n": {
+              "SYS": "Where do you go afterwards?"
+            },
+            "label": "VFUQ-660",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "670": {
+            "n": {
+              "SYS": "What main activities do people come to do in this outlet ?"
+            },
+            "label": "VFUQ-670",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "680": {
+            "n": {
+              "SYS": "Are they mostly sitting or standing?"
+            },
+            "label": "VFUQ-680",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "690": {
+            "n": {
+              "SYS": "How do they order?"
+            },
+            "label": "VFUQ-690",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "700": {
+            "n": {
+              "SYS": "What is the most purchased drink?"
+            },
+            "label": "VFUQ-700",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "710": {
+            "n": {
+              "SYS": "What type of SKU is mostly displayed? (Bottles and Cans)"
+            },
+            "label": "VFUQ-710",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "720": {
+            "n": {
+              "SYS": "What type of SKU is mostly sold? (Bottles and Cans)"
+            },
+            "label": "VFUQ-720",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "730": {
+            "n": {
+              "SYS": "For whom do they order?"
+            },
+            "label": "VFUQ-730",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "740": {
+            "n": {
+              "SYS": "What beer did the shopper purchase?"
+            },
+            "label": "VFUQ-740",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "750": {
+            "n": {
+              "SYS": "When do you order your beer?"
+            },
+            "label": "VFUQ-750",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "760": {
+            "n": {
+              "SYS": "How many times per week?"
+            },
+            "label": "VFUQ-760",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "770": {
+            "n": {
+              "SYS": "Who makes the decision?"
+            },
+            "label": "VFUQ-770",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "780": {
+            "n": {
+              "SYS": "Who places the order?"
+            },
+            "label": "VFUQ-780",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "790": {
+            "n": {
+              "SYS": "How soon after the order is placed do the products arrive normally?"
+            },
+            "label": "VFUQ-790",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "W": {
+      "n": "W",
+      "p": [
+        {
+          "10": {
+            "n": {
+              "SYS": "Who are your customers?"
+            },
+            "label": "W-10",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "20": {
+            "n": {
+              "SYS": "How many retailers do you service?"
+            },
+            "label": "W-20",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "How many sub wholesalers do you service?"
+            },
+            "label": "W-30",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "How many other type of clients do you service?"
+            },
+            "label": "W-40",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "41": {
+            "n": {
+              "SYS": "Do you have an updated overview/list of your customers and their accounts?"
+            },
+            "label": "W-41",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "50": {
+            "n": {
+              "SYS": "What are the top retailer types / channels you service? Choose from a maximum of 3."
+            },
+            "label": "W-50",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "60": {
+            "n": {
+              "SYS": "Do you help with any supplier activations/ promotions?"
+            },
+            "label": "W-60",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "70": {
+            "n": {
+              "SYS": "Do you have a sales/delivery team?"
+            },
+            "label": "W-70",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "80": {
+            "n": {
+              "SYS": "Does your sales team work with a routing/journey plan?"
+            },
+            "label": "W-80",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "90": {
+            "n": {
+              "SYS": "What are the responsibilities of the sales team?"
+            },
+            "label": "W-90",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "100": {
+            "n": {
+              "SYS": "Do you incentivise your sales reps?"
+            },
+            "label": "W-100",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "110": {
+            "n": {
+              "SYS": "How many people work for your business?"
+            },
+            "label": "W-110",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "120": {
+            "n": {
+              "SYS": "How many people accross the departments?"
+            },
+            "label": "W-120",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "130": {
+            "n": {
+              "SYS": "Do you offer credit terms?"
+            },
+            "label": "W-130",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "131": {
+            "n": {
+              "SYS": "What type of credit do you offer?"
+            },
+            "label": "W-131",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "132": {
+            "n": {
+              "SYS": "How long is the credit in weeks?"
+            },
+            "label": "W-132",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "133": {
+            "n": {
+              "SYS": "What's the minimum value of invoices open for credit?"
+            },
+            "label": "W-133",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "140": {
+            "n": {
+              "SYS": "How do you take the majority of your orders? Choose a maximum of 2."
+            },
+            "label": "W-140",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "141": {
+            "n": {
+              "SYS": "How much of your sales are for consumer at retail price or for retailers at wholesale price?"
+            },
+            "label": "W-141",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "142": {
+            "n": {
+              "SYS": "Do you deliver to your clients?"
+            },
+            "label": "W-142",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "143": {
+            "n": {
+              "SYS": "How are your cigarettes delivered to your customers?"
+            },
+            "label": "W-143",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "150": {
+            "n": {
+              "SYS": "Do you have a forecast in place for your sales?"
+            },
+            "label": "W-150",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "160": {
+            "n": {
+              "SYS": "How often do you buy per week (inbound stock)? Enter a number between 0 and 7"
+            },
+            "label": "W-160",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "170": {
+            "n": {
+              "SYS": "Do you measure and register your stock?"
+            },
+            "label": "W-170",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "180": {
+            "n": {
+              "SYS": "How many trucks do you have?"
+            },
+            "label": "W-180",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "190": {
+            "n": {
+              "SYS": "How many vehicles do you have?"
+            },
+            "label": "W-190",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "200": {
+            "n": {
+              "SYS": "Do you use a computer for your business?"
+            },
+            "label": "W-200",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "205": {
+            "n": {
+              "SYS": "Do you use a smartphone for your business?"
+            },
+            "label": "W-205",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "210": {
+            "n": {
+              "SYS": "Do you have internet?"
+            },
+            "label": "W-210",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "220": {
+            "n": {
+              "SYS": "Do you have all-day power?"
+            },
+            "label": "W-220",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "250": {
+            "n": {
+              "SYS": "What's the most important thing your supplier should provide you?"
+            },
+            "label": "W-250",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "260": {
+            "n": {
+              "SYS": "Which brands of fridges are present in the outlet"
+            },
+            "label": "W-260",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "280": {
+            "n": {
+              "SYS": "Do you provide credit to your clients?"
+            },
+            "label": "W-280",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "290": {
+            "n": {
+              "SYS": "How many retail clients buy at least once a month from you?"
+            },
+            "label": "W-290",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "300": {
+            "n": {
+              "SYS": "Which beer brand has the most visible branding outside of the outlet with signage ?"
+            },
+            "label": "W-300",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "l": {
+    "LST-YES-NO": [
+      {
+        "v": "Y",
+        "n": {
+          "SYS": "Yes"
+        }
+      },
+      {
+        "v": "N",
+        "n": {
+          "SYS": "No"
+        }
+      }
+    ]
+  }
+}
