@@ -2,8 +2,104 @@
   "n": "TC Insight Spec",
   "v": "2.0.0",
   "s": {
+    "P": {
+      "n": "Profile",
+      "p": [
+        {
+          "10": {
+            "n": {
+              "SYS": "Surname"
+            },
+            "label": "P-10",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "20": {
+            "n": {
+              "SYS": "Name"
+            },
+            "label": "P-20",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "Enumerator Code"
+            },
+            "label": "P-30",
+            "t": [
+              {
+                "t": "N"
+              }
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "Supervisor Code"
+            },
+            "label": "P-40",
+            "t": [
+              {
+                "t": "N"
+              }
+            ]
+          }
+        },
+        {
+          "50": {
+            "n": {
+              "SYS": "Date"
+            },
+            "label": "P-50",
+            "t": [
+              {
+                "t": "N"
+              }
+            ]
+          }
+        },
+        {
+          "60": {
+            "n": {
+              "SYS": "Telephone number"
+            },
+            "label": "P-60",
+            "t": [
+              {
+                "t": "N"
+              }
+            ]
+          }
+        },
+        {
+          "70": {
+            "n": {
+              "SYS": "Time stamp START Interview"
+            },
+            "label": "P-70",
+            "t": [
+              {
+                "t": "N"
+              }
+            ]
+          }
+        }
+      ]
+    },
     "A": {
-      "n": "A",
+      "n": "Area",
       "p": [
         {
           "10": {
@@ -100,8 +196,866 @@
         }
       ]
     },
+    "O": {
+      "n": "Outlet details",
+      "p": [
+        {
+          "10": {
+            "n": {
+              "SYS": "GPS location of outlet"
+            },
+            "label": "O-10",
+            "t": [
+              {
+                "t": "T"
+              }
+            ],
+            "o": [
+              "e",
+              "b",
+              "bp"
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "What is the address/landmark point that identifies the outlet? (e.g. NEAR THIS... NEXT TO... BEHIND THIS...)"
+            },
+            "label": "O-40",
+            "t": [
+              {
+                "t": "T"
+              }
+            ],
+            "o": [
+              "e",
+              "b",
+              "bp"
+            ]
+          }
+        },
+        {
+          "41": {
+            "n": {
+              "SYS": "What is the Street Name?"
+            },
+            "label": "O-41",
+            "t": [
+              {
+                "t": "T"
+              }
+            ],
+            "o": [
+              "e",
+              "b",
+              "bp"
+            ]
+          }
+        },
+        {
+          "60": {
+            "n": {
+              "SYS": "What is the name of the outlet?"
+            },
+            "label": "O-60",
+            "t": [
+              {
+                "t": "T"
+              }
+            ],
+            "o": [
+              "e",
+              "b",
+              "bp"
+            ]
+          }
+        },
+        {
+          "61": {
+            "n": {
+              "SYS": "What other name is this outlet known by?"
+            },
+            "label": "O-61",
+            "t": [
+              {
+                "t": "T"
+              }
+            ],
+            "o": [
+              "e",
+              "b",
+              "bp"
+            ]
+          }
+        }
+      ]
+    },
+    "I": {
+      "n": "Interview Start",
+      "p": [
+        {
+          "10": {
+            "n": {
+              "SYS": "Find the most senior person available (Manager or Owner)"
+            },
+            "label": "I-10",
+            "t": [
+              {
+                "t": "-"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        },
+        {
+          "20": {
+            "n": {
+              "SYS": "Who are you speaking to?"
+            },
+            "label": "I-20",
+            "t": [
+              {
+                "t": "O",
+                "o": "LST-INTERVIEWEE-ROLES"
+              }
+            ],
+            "o": [
+              "e",
+              "b",
+              "bp"
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "INTRODUCTION: My name is .… Our company is operating a Trade Census. The objective is to better understand the tobacco market to eventually improve service to you as point of sale."
+            },
+            "label": "I-30",
+            "t": [
+              {
+                "t": "C"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        },
+        {
+          "31": {
+            "n": {
+              "SYS": "A colleague of mine has recently visited you to conduct a Trade Census, and to insure we have quality information I am checking that we have correctly captured the information about your point of sale. I will be asking you a select number of questions for quality purposes."
+            },
+            "label": "I-31",
+            "t": [
+              {
+                "t": "-"
+              }
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "Would you have a few minutes available to answer some questions about your business? This should not take long."
+            },
+            "label": "I-40",
+            "t": [
+              {
+                "t": "O",
+                "o": "LST-IFUQ-40"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        },
+        {
+          "130": {
+            "n": {
+              "SYS": "Are most (over 50%) of your sales to:"
+            },
+            "label": "I-130",
+            "t": [
+              {
+                "t": "O"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        },
+        {
+          "134": {
+            "n": {
+              "SYS": "Do you sell Cigarettes ?"
+            },
+            "label": "I-134",
+            "t": [
+              {
+                "t": "O",
+                "o": "LST-YES-NO"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        },
+        {
+          "131": {
+            "n": {
+              "SYS": "Select the retailer channel"
+            },
+            "label": "I-131",
+            "t": [
+              {
+                "t": "O"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        },
+        {
+          "133": {
+            "n": {
+              "SYS": "Select the wholesaler channel"
+            },
+            "label": "I-133",
+            "t": [
+              {
+                "t": "O"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        },
+        {
+          "1351": {
+            "n": {
+              "SYS": "Are you also distributing to other retailer ?"
+            },
+            "label": "I-1351",
+            "t": [
+              {
+                "t": "O",
+                "o": "LST-YES-NO"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        },
+        {
+          "1352": {
+            "n": {
+              "SYS": "Are you also distributing to consumers?"
+            },
+            "label": "I-1352",
+            "t": [
+              {
+                "t": "O",
+                "o": "LST-YES-NO"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        },
+        {
+          "136": {
+            "n": {
+              "SYS": "Do you sell more in sticks, packs or bundle ?"
+            },
+            "label": "I-136",
+            "t": [
+              {
+                "t": "O"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        }
+      ]
+    },
+    "V": {
+      "n": "Volume",
+      "p": [
+        {
+          "20": {
+            "n": {
+              "SYS": "Do you sell evapes?"
+            },
+            "label": "V-20",
+            "t": [
+              {
+                "t": "O",
+                "o": "LST-YES-NO"
+              }
+            ]
+          }
+        },
+        {
+          "50": {
+            "n": {
+              "SYS": "On an average week how much do you sell cigarettes (Tobacco) ?"
+            },
+            "label": "V-50",
+            "t": [
+              {
+                "t": "N"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        },
+        {
+          "21": {
+            "n": {
+              "SYS": "Price per bundle/carton"
+            },
+            "label": "V-21",
+            "t": [
+              {
+                "t": "-"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        },
+        {
+          "60": {
+            "n": {
+              "SYS": "On a normal day, how much do you sell for each cigarette (in packs or cartons)?"
+            },
+            "label": "V-60",
+            "t": [
+              {
+                "t": "N"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        }
+      ]
+    },
+    "W": {
+      "n": "Wholesaler",
+      "p": [
+        {
+          "10": {
+            "n": {
+              "SYS": "Who are your customers?"
+            },
+            "label": "W-10",
+            "t": [
+              {
+                "t": "C"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        },
+        {
+          "20": {
+            "n": {
+              "SYS": "How many retailers do you service?"
+            },
+            "label": "W-20",
+            "t": [
+              {
+                "t": "N"
+              }
+            ],
+            "o": [
+              "e"
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "How many sub wholesalers do you service?"
+            },
+            "label": "W-30",
+            "t": [
+              {
+                "t": "N"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        },
+        {
+          "40": {
+            "n": {
+              "SYS": "How many other type of clients do you service?"
+            },
+            "label": "W-40",
+            "t": [
+              {
+                "t": "N"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        },
+        {
+          "41": {
+            "n": {
+              "SYS": "Do you have an updated overview/list of your customers and their accounts?"
+            },
+            "label": "W-41",
+            "t": [
+              {
+                "t": "O",
+                "o": "LST-YES-NO"
+              }
+            ],
+            "o": [
+              "e",
+              "b",
+              "bp"
+            ]
+          }
+        },
+        {
+          "70": {
+            "n": {
+              "SYS": "Do you have a sales/delivery team?"
+            },
+            "label": "W-70",
+            "t": [
+              {
+                "t": "O",
+                "o": "LST-YES-NO"
+              }
+            ],
+            "o": [
+              "e"
+            ]
+          }
+        },
+        {
+          "110": {
+            "n": {
+              "SYS": "How many people work for your business?"
+            },
+            "label": "W-110",
+            "t": [
+              {
+                "t": "N"
+              }
+            ],
+            "o": [
+              "e",
+              "b"
+            ]
+          }
+        },
+        {
+          "132": {
+            "n": {
+              "SYS": "How long is the credit in weeks?"
+            },
+            "label": "W-132",
+            "t": [
+              {
+                "t": "N"
+              }
+            ],
+            "o": [
+              "e"
+            ]
+          }
+        },
+        {
+          "133": {
+            "n": {
+              "SYS": "What's the minimum value of invoices open for credit?"
+            },
+            "label": "W-133",
+            "t": [
+              {
+                "t": "N"
+              }
+            ],
+            "o": [
+              "e"
+            ]
+          }
+        },
+        {
+          "160": {
+            "n": {
+              "SYS": "How often do you buy per week (inbound stock)? Enter a number between 0 and 7"
+            },
+            "label": "W-160",
+            "t": [
+              {
+                "t": "N"
+              }
+            ],
+            "o": [
+              "e"
+            ]
+          }
+        },
+        {
+          "190": {
+            "n": {
+              "SYS": "How many vehicles do you have?"
+            },
+            "label": "W-190",
+            "t": [
+              {
+                "t": "N"
+              }
+            ],
+            "o": [
+              "e"
+            ]
+          }
+        },
+        {
+          "205": {
+            "n": {
+              "SYS": "Do you use a smartphone for your business?"
+            },
+            "label": "W-205",
+            "t": [
+              {
+                "t": "O",
+                "o": "LST-YES-NO"
+              }
+            ],
+            "o": [
+              "e"
+            ]
+          }
+        },
+        {
+          "250": {
+            "n": {
+              "SYS": "What's the most important thing your supplier should provide you?"
+            },
+            "label": "W-250",
+            "t": [
+              {
+                "t": "O"
+              }
+            ],
+            "o": [
+              "e"
+            ]
+          }
+        }
+      ]
+    },
+    "M": {
+      "n": "Marketing",
+      "p": [
+        {
+          "24": {
+            "n": {
+              "SYS": "On average, how many customers buy cigarettes from your outlet in a day?"
+            },
+            "label": "M-24",
+            "t": [
+              {
+                "t": "N"
+              }
+            ],
+            "o": [
+              "e"
+            ]
+          }
+        },
+        {
+          "30": {
+            "n": {
+              "SYS": "Which brand is the MOST visible in the outlet (outside/ inside) ?"
+            },
+            "label": "M-30",
+            "t": [
+              {
+                "t": "O"
+              }
+            ]
+          }
+        },
+        {
+          "43": {
+            "n": {
+              "SYS": "Are pack being displayed ?"
+            },
+            "label": "M-43",
+            "t": [
+              {
+                "t": "O",
+                "o": "LST-YES-NO"
+              }
+            ]
+          }
+        },
+        {
+          "44": {
+            "n": {
+              "SYS": "Select the brands that have a wall unit display present"
+            },
+            "label": "M-44",
+            "t": [
+              {
+                "t": "N"
+              }
+            ]
+          }
+        },
+        {
+          "45": {
+            "n": {
+              "SYS": "Select the brands that have an overhead dispaly present"
+            },
+            "label": "M-45",
+            "t": [
+              {
+                "t": "N"
+              }
+            ]
+          }
+        },
+        {
+          "46": {
+            "n": {
+              "SYS": "Select the brands that have an standing display present"
+            },
+            "label": "M-46",
+            "t": [
+              {
+                "t": "N"
+              }
+            ]
+          }
+        },
+        {
+          "48": {
+            "n": {
+              "SYS": "Select the brands that have a wall painting present"
+            },
+            "label": "M-48",
+            "t": [
+              {
+                "t": "N"
+              }
+            ]
+          }
+        },
+        {
+          "49": {
+            "n": {
+              "SYS": "Select the brands that have a free standing display sign present"
+            },
+            "label": "M-49",
+            "t": [
+              {
+                "t": "N"
+              }
+            ]
+          }
+        },
+        {
+          "60": {
+            "n": {
+              "SYS": "Which of the following brands are present (listed) in the outlet?"
+            },
+            "label": "M-60",
+            "t": [
+              {
+                "t": "N"
+              }
+            ]
+          }
+        },
+        {
+          "71": {
+            "n": {
+              "SYS": "What are your busiest times of day? (Maximum 2 responses)"
+            },
+            "label": "M-71",
+            "t": [
+              {
+                "t": "C"
+              }
+            ]
+          }
+        },
+        {
+          "80": {
+            "n": {
+              "SYS": "Main gender of consumers"
+            },
+            "label": "M-80",
+            "t": [
+              {
+                "t": "O"
+              }
+            ]
+          }
+        },
+        {
+          "90": {
+            "n": {
+              "SYS": "Main age of consumers"
+            },
+            "label": "M-90",
+            "t": [
+              {
+                "t": "O"
+              }
+            ]
+          }
+        },
+        {
+          "100": {
+            "n": {
+              "SYS": "Check if following items are present in the outlet (premium indicators)"
+            },
+            "label": "M-100",
+            "t": [
+              {
+                "t": "C"
+              }
+            ]
+          }
+        },
+        {
+          "116": {
+            "n": {
+              "SYS": "What 2 brands from the following list are the most important to you and your consumers?"
+            },
+            "label": "M-116",
+            "t": [
+              {
+                "t": "C"
+              }
+            ]
+          }
+        },
+        {
+          "117": {
+            "n": {
+              "SYS": "What is the year of this outlet's establishment?"
+            },
+            "label": "M-117",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "118": {
+            "n": {
+              "SYS": "What is the number of full time employees?"
+            },
+            "label": "M-118",
+            "t": [
+              {
+                "t": "T"
+              }
+            ]
+          }
+        },
+        {
+          "119": {
+            "n": {
+              "SYS": "Is there a storage room available?"
+            },
+            "label": "M-119",
+            "t": [
+              {
+                "t": "O",
+                "o": "LST-YES-NO"
+              }
+            ]
+          }
+        },
+        {
+          "120": {
+            "n": {
+              "SYS": "What is the size of the storage room (in m2)?"
+            },
+            "label": "M-120",
+            "t": [
+              {
+                "t": "N"
+              }
+            ]
+          }
+        },
+        {
+          "121": {
+            "n": {
+              "SYS": "How many days do you work per week?"
+            },
+            "label": "M-121",
+            "t": [
+              {
+                "t": "N"
+              }
+            ],
+            "o": [
+              "e"
+            ]
+          }
+        }
+      ]
+    },
     "D": {
-      "n": "D",
+      "n": "Distribution",
       "p": [
         {
           "10": {
@@ -1462,286 +2416,8 @@
         }
       ]
     },
-    "DFUQ": {
-      "n": "DFUQ",
-      "p": [
-        {
-          "10": {
-            "n": {
-              "SYS": "Who are your customers?"
-            },
-            "label": "DFUQ-10",
-            "t": [
-              {
-                "t": "C"
-              }
-            ]
-          }
-        },
-        {
-          "20": {
-            "n": {
-              "SYS": "Do you help with any supplier activations/promotions?"
-            },
-            "label": "DFUQ-20",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "30": {
-            "n": {
-              "SYS": "Do you have a sales/ delivery team?"
-            },
-            "label": "DFUQ-30",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "40": {
-            "n": {
-              "SYS": "Does your sales team work with a routing/journey plan?"
-            },
-            "label": "DFUQ-40",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "50": {
-            "n": {
-              "SYS": "What are their responsibilities?"
-            },
-            "label": "DFUQ-50",
-            "t": [
-              {
-                "t": "C",
-                "o": "LST-DFUQ-50"
-              }
-            ]
-          }
-        },
-        {
-          "60": {
-            "n": {
-              "SYS": "How many people work for your business?"
-            },
-            "label": "DFUQ-60",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "70": {
-            "n": {
-              "SYS": "Do you offer credit terms?"
-            },
-            "label": "DFUQ-70",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "80": {
-            "n": {
-              "SYS": "How are your orders made?"
-            },
-            "label": "DFUQ-80",
-            "t": [
-              {
-                "t": "C",
-                "o": "LST-DFUQ-80"
-              }
-            ]
-          }
-        },
-        {
-          "90": {
-            "n": {
-              "SYS": "Do you do sales forecasting?"
-            },
-            "label": "DFUQ-90",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "100": {
-            "n": {
-              "SYS": "How often do you buy per week(inbound stock)?"
-            },
-            "label": "DFUQ-100",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "110": {
-            "n": {
-              "SYS": "Do you measure your stock?"
-            },
-            "label": "DFUQ-110",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "130": {
-            "n": {
-              "SYS": "How many trucks do you have?"
-            },
-            "label": "DFUQ-130",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "140": {
-            "n": {
-              "SYS": "How many tricycles do you have?"
-            },
-            "label": "DFUQ-140",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "160": {
-            "n": {
-              "SYS": "Do you use a computer for your business?"
-            },
-            "label": "DFUQ-160",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "170": {
-            "n": {
-              "SYS": "Do you have internet?"
-            },
-            "label": "DFUQ-170",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "190": {
-            "n": {
-              "SYS": "Do you incentivise your sales reps?"
-            },
-            "label": "DFUQ-190",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "200": {
-            "n": {
-              "SYS": "Do you have an overview of your customers and their accounts?"
-            },
-            "label": "DFUQ-200",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "210": {
-            "n": {
-              "SYS": "Do you have all-day power?"
-            },
-            "label": "DFUQ-210",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "220": {
-            "n": {
-              "SYS": "What are the most important?"
-            },
-            "label": "DFUQ-220",
-            "t": [
-              {
-                "t": "T"
-              }
-            ]
-          }
-        },
-        {
-          "230": {
-            "n": {
-              "SYS": "How important are they?"
-            },
-            "label": "DFUQ-230",
-            "t": [
-              {
-                "t": "T"
-              }
-            ]
-          }
-        }
-      ]
-    },
     "E": {
-      "n": "E",
+      "n": "End",
       "p": [
         {
           "10": {
@@ -2024,2166 +2700,6 @@
             ],
             "o": [
               "b"
-            ]
-          }
-        }
-      ]
-    },
-    "EFUQ": {
-      "n": "EFUQ",
-      "p": [
-        {
-          "10": {
-            "n": {
-              "SYS": "Time stamp END Interview?"
-            },
-            "label": "EFUQ-10",
-            "t": [
-              {
-                "t": "T"
-              }
-            ]
-          }
-        },
-        {
-          "20": {
-            "n": {
-              "SYS": "I hereby certify that this interview has been carried out by me according to the instructions I received."
-            },
-            "label": "EFUQ-20",
-            "t": [
-              {
-                "t": "-"
-              }
-            ]
-          }
-        },
-        {
-          "30": {
-            "n": {
-              "SYS": "GPS location."
-            },
-            "label": "EFUQ-30",
-            "t": [
-              {
-                "t": "T"
-              }
-            ]
-          }
-        },
-        {
-          "40": {
-            "n": {
-              "SYS": "General Comments:"
-            },
-            "label": "EFUQ-40",
-            "t": [
-              {
-                "t": "T"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "ENDFUQ": {
-      "n": "ENDFUQ",
-      "p": [
-        {
-          "1": {
-            "n": {
-              "SYS": "Do you wish to interview another consumer in this location?"
-            },
-            "label": "ENDFUQ-1",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "I": {
-      "n": "I",
-      "p": [
-        {
-          "10": {
-            "n": {
-              "SYS": "Find the most senior person available (Manager or Owner)"
-            },
-            "label": "I-10",
-            "t": [
-              {
-                "t": "-"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        },
-        {
-          "20": {
-            "n": {
-              "SYS": "Who are you speaking to?"
-            },
-            "label": "I-20",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-INTERVIEWEE-ROLES"
-              }
-            ],
-            "o": [
-              "e",
-              "b",
-              "bp"
-            ]
-          }
-        },
-        {
-          "30": {
-            "n": {
-              "SYS": "INTRODUCTION: My name is .… Our company is operating a Trade Census. The objective is to better understand the tobacco market to eventually improve service to you as point of sale."
-            },
-            "label": "I-30",
-            "t": [
-              {
-                "t": "C"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        },
-        {
-          "31": {
-            "n": {
-              "SYS": "A colleague of mine has recently visited you to conduct a Trade Census, and to insure we have quality information I am checking that we have correctly captured the information about your point of sale. I will be asking you a select number of questions for quality purposes."
-            },
-            "label": "I-31",
-            "t": [
-              {
-                "t": "-"
-              }
-            ]
-          }
-        },
-        {
-          "40": {
-            "n": {
-              "SYS": "Would you have a few minutes available to answer some questions about your business? This should not take long."
-            },
-            "label": "I-40",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-IFUQ-40"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        },
-        {
-          "130": {
-            "n": {
-              "SYS": "Are most (over 50%) of your sales to:"
-            },
-            "label": "I-130",
-            "t": [
-              {
-                "t": "O"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        },
-        {
-          "134": {
-            "n": {
-              "SYS": "Do you sell Cigarettes ?"
-            },
-            "label": "I-134",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        },
-        {
-          "131": {
-            "n": {
-              "SYS": "Select the retailer channel"
-            },
-            "label": "I-131",
-            "t": [
-              {
-                "t": "O"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        },
-        {
-          "133": {
-            "n": {
-              "SYS": "Select the wholesaler channel"
-            },
-            "label": "I-133",
-            "t": [
-              {
-                "t": "O"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        },
-        {
-          "1351": {
-            "n": {
-              "SYS": "Are you also distributing to other retailer ?"
-            },
-            "label": "I-1351",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        },
-        {
-          "1352": {
-            "n": {
-              "SYS": "Are you also distributing to consumers?"
-            },
-            "label": "I-1352",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        },
-        {
-          "136": {
-            "n": {
-              "SYS": "Do you sell more in sticks, packs or bundle ?"
-            },
-            "label": "I-136",
-            "t": [
-              {
-                "t": "O"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        }
-      ]
-    },
-    "IFUQ": {
-      "n": "IFUQ",
-      "p": [
-        {
-          "1": {
-            "n": {
-              "SYS": "GPS"
-            },
-            "label": "IFUQ-1",
-            "t": [
-              {
-                "t": "T"
-              }
-            ]
-          }
-        },
-        {
-          "10": {
-            "n": {
-              "SYS": "Confirm the channel that you are in"
-            },
-            "label": "IFUQ-10",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-IFUQ-10"
-              }
-            ]
-          }
-        },
-        {
-          "20": {
-            "n": {
-              "SYS": "Who are you speaking to?"
-            },
-            "label": "IFUQ-20",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-IFUQ-20"
-              }
-            ]
-          }
-        },
-        {
-          "30": {
-            "n": {
-              "SYS": "INTRODUCTION: My name is .… A colleague of mine has recently visited you to collect information regarding a Trade Census. I would like to have follow-up qualititative survey withyourself and a small number of your consumers. The objective is to assist the company to better understand the market and eventually improve service to you and your consumers"
-            },
-            "label": "IFUQ-30",
-            "t": [
-              {
-                "t": "-"
-              }
-            ]
-          }
-        },
-        {
-          "31": {
-            "n": {
-              "SYS": "INTRODUCTION: My name is ... A colleague of mine has recently visited you to collect information regarding a Trade Census. I would like to have follow-up qualitative survey with yourself. The objective is to assist the company to better understand the distribution landscape, your needs and eventually improve service to you."
-            },
-            "label": "IFUQ-31",
-            "t": [
-              {
-                "t": "-"
-              }
-            ]
-          }
-        },
-        {
-          "32": {
-            "n": {
-              "SYS": "INTRODUCTION: My name is .… Our company is operating a market research analysis. The objective is to assist the company to better understand the market and the consummers. We would like to ask you a few questions as a consumer within this outlet, we will only take a few minutes of your time."
-            },
-            "label": "IFUQ-32",
-            "t": [
-              {
-                "t": "T"
-              }
-            ]
-          }
-        },
-        {
-          "40": {
-            "n": {
-              "SYS": "Would you have a few minutes available to answer some questions about your business? This should not take long."
-            },
-            "label": "IFUQ-40",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-IFUQ-40"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "M": {
-      "n": "M",
-      "p": [
-        {
-          "24": {
-            "n": {
-              "SYS": "On average, how many customers buy cigarettes from your outlet in a day?"
-            },
-            "label": "M-24",
-            "t": [
-              {
-                "t": "N"
-              }
-            ],
-            "o": [
-              "e"
-            ]
-          }
-        },
-        {
-          "30": {
-            "n": {
-              "SYS": "Which brand is the MOST visible in the outlet (outside/ inside) ?"
-            },
-            "label": "M-30",
-            "t": [
-              {
-                "t": "O"
-              }
-            ]
-          }
-        },
-        {
-          "43": {
-            "n": {
-              "SYS": "Are pack being displayed ?"
-            },
-            "label": "M-43",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "44": {
-            "n": {
-              "SYS": "Select the brands that have a wall unit display present"
-            },
-            "label": "M-44",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "45": {
-            "n": {
-              "SYS": "Select the brands that have an overhead dispaly present"
-            },
-            "label": "M-45",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "46": {
-            "n": {
-              "SYS": "Select the brands that have an standing display present"
-            },
-            "label": "M-46",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "48": {
-            "n": {
-              "SYS": "Select the brands that have a wall painting present"
-            },
-            "label": "M-48",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "49": {
-            "n": {
-              "SYS": "Select the brands that have a free standing display sign present"
-            },
-            "label": "M-49",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "60": {
-            "n": {
-              "SYS": "Which of the following brands are present (listed) in the outlet?"
-            },
-            "label": "M-60",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "71": {
-            "n": {
-              "SYS": "What are your busiest times of day? (Maximum 2 responses)"
-            },
-            "label": "M-71",
-            "t": [
-              {
-                "t": "C"
-              }
-            ]
-          }
-        },
-        {
-          "80": {
-            "n": {
-              "SYS": "Main gender of consumers"
-            },
-            "label": "M-80",
-            "t": [
-              {
-                "t": "O"
-              }
-            ]
-          }
-        },
-        {
-          "90": {
-            "n": {
-              "SYS": "Main age of consumers"
-            },
-            "label": "M-90",
-            "t": [
-              {
-                "t": "O"
-              }
-            ]
-          }
-        },
-        {
-          "100": {
-            "n": {
-              "SYS": "Check if following items are present in the outlet (premium indicators)"
-            },
-            "label": "M-100",
-            "t": [
-              {
-                "t": "C"
-              }
-            ]
-          }
-        },
-        {
-          "116": {
-            "n": {
-              "SYS": "What 2 brands from the following list are the most important to you and your consumers?"
-            },
-            "label": "M-116",
-            "t": [
-              {
-                "t": "C"
-              }
-            ]
-          }
-        },
-        {
-          "117": {
-            "n": {
-              "SYS": "What is the year of this outlet's establishment?"
-            },
-            "label": "M-117",
-            "t": [
-              {
-                "t": "T"
-              }
-            ]
-          }
-        },
-        {
-          "118": {
-            "n": {
-              "SYS": "What is the number of full time employees?"
-            },
-            "label": "M-118",
-            "t": [
-              {
-                "t": "T"
-              }
-            ]
-          }
-        },
-        {
-          "119": {
-            "n": {
-              "SYS": "Is there a storage room available?"
-            },
-            "label": "M-119",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "120": {
-            "n": {
-              "SYS": "What is the size of the storage room (in m2)?"
-            },
-            "label": "M-120",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "121": {
-            "n": {
-              "SYS": "How many days do you work per week?"
-            },
-            "label": "M-121",
-            "t": [
-              {
-                "t": "N"
-              }
-            ],
-            "o": [
-              "e"
-            ]
-          }
-        }
-      ]
-    },
-    "O": {
-      "n": "O",
-      "p": [
-        {
-          "10": {
-            "n": {
-              "SYS": "GPS location of outlet"
-            },
-            "label": "O-10",
-            "t": [
-              {
-                "t": "T"
-              }
-            ],
-            "o": [
-              "e",
-              "b",
-              "bp"
-            ]
-          }
-        },
-        {
-          "40": {
-            "n": {
-              "SYS": "What is the address/landmark point that identifies the outlet? (e.g. NEAR THIS... NEXT TO... BEHIND THIS...)"
-            },
-            "label": "O-40",
-            "t": [
-              {
-                "t": "T"
-              }
-            ],
-            "o": [
-              "e",
-              "b",
-              "bp"
-            ]
-          }
-        },
-        {
-          "41": {
-            "n": {
-              "SYS": "What is the Street Name?"
-            },
-            "label": "O-41",
-            "t": [
-              {
-                "t": "T"
-              }
-            ],
-            "o": [
-              "e",
-              "b",
-              "bp"
-            ]
-          }
-        },
-        {
-          "60": {
-            "n": {
-              "SYS": "What is the name of the outlet?"
-            },
-            "label": "O-60",
-            "t": [
-              {
-                "t": "T"
-              }
-            ],
-            "o": [
-              "e",
-              "b",
-              "bp"
-            ]
-          }
-        },
-        {
-          "61": {
-            "n": {
-              "SYS": "What other name is this outlet known by?"
-            },
-            "label": "O-61",
-            "t": [
-              {
-                "t": "T"
-              }
-            ],
-            "o": [
-              "e",
-              "b",
-              "bp"
-            ]
-          }
-        }
-      ]
-    },
-    "P": {
-      "n": "P",
-      "p": [
-        {
-          "10": {
-            "n": {
-              "SYS": "Surname"
-            },
-            "label": "P-10",
-            "t": [
-              {
-                "t": "T"
-              }
-            ]
-          }
-        },
-        {
-          "20": {
-            "n": {
-              "SYS": "Name"
-            },
-            "label": "P-20",
-            "t": [
-              {
-                "t": "T"
-              }
-            ]
-          }
-        },
-        {
-          "30": {
-            "n": {
-              "SYS": "Enumerator Code"
-            },
-            "label": "P-30",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "40": {
-            "n": {
-              "SYS": "Supervisor Code"
-            },
-            "label": "P-40",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "50": {
-            "n": {
-              "SYS": "Date"
-            },
-            "label": "P-50",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "60": {
-            "n": {
-              "SYS": "Telephone number"
-            },
-            "label": "P-60",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "70": {
-            "n": {
-              "SYS": "Time stamp START Interview"
-            },
-            "label": "P-70",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "V": {
-      "n": "V",
-      "p": [
-        {
-          "20": {
-            "n": {
-              "SYS": "Do you sell evapes?"
-            },
-            "label": "V-20",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "50": {
-            "n": {
-              "SYS": "On an average week how much do you sell cigarettes (Tobacco) ?"
-            },
-            "label": "V-50",
-            "t": [
-              {
-                "t": "N"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        },
-        {
-          "21": {
-            "n": {
-              "SYS": "Price per bundle/carton"
-            },
-            "label": "V-21",
-            "t": [
-              {
-                "t": "-"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        },
-        {
-          "60": {
-            "n": {
-              "SYS": "On a normal day, how much do you sell for each cigarette (in packs or cartons)?"
-            },
-            "label": "V-60",
-            "t": [
-              {
-                "t": "N"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        }
-      ]
-    },
-    "VFUQ": {
-      "n": "VFUQ",
-      "p": [
-        {
-          "10": {
-            "n": {
-              "SYS": "Which gender is mostly represented in this outlet?"
-            },
-            "label": "VFUQ-10",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-10"
-              }
-            ]
-          }
-        },
-        {
-          "20": {
-            "n": {
-              "SYS": "Which age group is mostly represented in this outlet?"
-            },
-            "label": "VFUQ-20",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-20"
-              }
-            ]
-          }
-        },
-        {
-          "30": {
-            "n": {
-              "SYS": "Which professional group is mostly represented in this outlet?"
-            },
-            "label": "VFUQ-30",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-30"
-              }
-            ]
-          }
-        },
-        {
-          "40": {
-            "n": {
-              "SYS": "What nationality is mostly present in this outlet?"
-            },
-            "label": "VFUQ-40",
-            "t": [
-              {
-                "t": "O"
-              }
-            ]
-          }
-        },
-        {
-          "50": {
-            "n": {
-              "SYS": "Which educational level is mostly represented in this outlet?"
-            },
-            "label": "VFUQ-50",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-50"
-              }
-            ]
-          }
-        },
-        {
-          "60": {
-            "n": {
-              "SYS": "What is the purchasing power of the consumer"
-            },
-            "label": "VFUQ-60",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-60"
-              }
-            ]
-          }
-        },
-        {
-          "70": {
-            "n": {
-              "SYS": "Gender of the manager?"
-            },
-            "label": "VFUQ-70",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-10"
-              }
-            ]
-          }
-        },
-        {
-          "80": {
-            "n": {
-              "SYS": "Age group of the manager?"
-            },
-            "label": "VFUQ-80",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-20"
-              }
-            ]
-          }
-        },
-        {
-          "90": {
-            "n": {
-              "SYS": "What are the busiest hours of operation for you?"
-            },
-            "label": "VFUQ-90",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-90"
-              }
-            ]
-          }
-        },
-        {
-          "100": {
-            "n": {
-              "SYS": "What are the busiest days of the week?"
-            },
-            "label": "VFUQ-100",
-            "t": [
-              {
-                "t": "C"
-              }
-            ]
-          }
-        },
-        {
-          "110": {
-            "n": {
-              "SYS": "What are the busiest months of the year?"
-            },
-            "label": "VFUQ-110",
-            "t": [
-              {
-                "t": "C",
-                "o": "LST-VFUQ-110"
-              }
-            ]
-          }
-        },
-        {
-          "120": {
-            "n": {
-              "SYS": "How many staff do you have working for your business?"
-            },
-            "label": "VFUQ-120",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "130": {
-            "n": {
-              "SYS": "How old is this outlet?"
-            },
-            "label": "VFUQ-130",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-130"
-              }
-            ]
-          }
-        },
-        {
-          "140": {
-            "n": {
-              "SYS": "How long have you been visiting this outlet?"
-            },
-            "label": "VFUQ-140",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-140"
-              }
-            ]
-          }
-        },
-        {
-          "150": {
-            "n": {
-              "SYS": "Which day(s) do you visit this type of outlet normally?"
-            },
-            "label": "VFUQ-150",
-            "t": [
-              {
-                "t": "C"
-              }
-            ]
-          }
-        },
-        {
-          "160": {
-            "n": {
-              "SYS": "How frequent do you visit this outlet normally?"
-            },
-            "label": "VFUQ-160",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-160"
-              }
-            ]
-          }
-        },
-        {
-          "170": {
-            "n": {
-              "SYS": "In what company do you visit this outlet normally?"
-            },
-            "label": "VFUQ-170",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-170"
-              }
-            ]
-          }
-        },
-        {
-          "180": {
-            "n": {
-              "SYS": "What are your main interests/ hobbies"
-            },
-            "label": "VFUQ-180",
-            "t": [
-              {
-                "t": "C",
-                "o": "LST-VFUQ-180"
-              }
-            ]
-          }
-        },
-        {
-          "190": {
-            "n": {
-              "SYS": "What is the build up of your household?"
-            },
-            "label": "VFUQ-190",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-190"
-              }
-            ]
-          }
-        },
-        {
-          "200": {
-            "n": {
-              "SYS": "Is there an exterior area?"
-            },
-            "label": "VFUQ-200",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "210": {
-            "n": {
-              "SYS": "Is it bigger than the interior area?"
-            },
-            "label": "VFUQ-210",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "220": {
-            "n": {
-              "SYS": "How many fridges are there here in the outlet?"
-            },
-            "label": "VFUQ-220",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "230": {
-            "n": {
-              "SYS": "How many are used to stock beer?"
-            },
-            "label": "VFUQ-230",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "240": {
-            "n": {
-              "SYS": "For which main reasons do you visit this outlet?"
-            },
-            "label": "VFUQ-240",
-            "t": [
-              {
-                "t": "C",
-                "o": "LST-VFUQ-240"
-              }
-            ]
-          }
-        },
-        {
-          "250": {
-            "n": {
-              "SYS": "What type of shopping are you doing?"
-            },
-            "label": "VFUQ-250",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-250"
-              }
-            ]
-          }
-        },
-        {
-          "260": {
-            "n": {
-              "SYS": "Do you drink beer?"
-            },
-            "label": "VFUQ-260",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "270": {
-            "n": {
-              "SYS": "Why do you drink beer?"
-            },
-            "label": "VFUQ-270",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-270"
-              }
-            ]
-          }
-        },
-        {
-          "280": {
-            "n": {
-              "SYS": "Why do you NOT drink beer?"
-            },
-            "label": "VFUQ-280",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-280"
-              }
-            ]
-          }
-        },
-        {
-          "290": {
-            "n": {
-              "SYS": "Who do you buy beer for?"
-            },
-            "label": "VFUQ-290",
-            "t": [
-              {
-                "t": "C",
-                "o": "LST-VFUQ-290"
-              }
-            ]
-          }
-        },
-        {
-          "300": {
-            "n": {
-              "SYS": "What beer is most important to you?"
-            },
-            "label": "VFUQ-300",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-300"
-              }
-            ]
-          }
-        },
-        {
-          "310": {
-            "n": {
-              "SYS": "What is the main reason for you to drink beer?"
-            },
-            "label": "VFUQ-310",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-310"
-              }
-            ]
-          }
-        },
-        {
-          "320": {
-            "n": {
-              "SYS": "Will you drink other beers?"
-            },
-            "label": "VFUQ-320",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "330": {
-            "n": {
-              "SYS": "Is the price of beer important to you?"
-            },
-            "label": "VFUQ-330",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "340": {
-            "n": {
-              "SYS": "Is alcohol content in beer important to you? If yes what is you ideal % content ?"
-            },
-            "label": "VFUQ-340",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-340"
-              }
-            ]
-          }
-        },
-        {
-          "350": {
-            "n": {
-              "SYS": "Do you check the price of beer before ordering/ buying?"
-            },
-            "label": "VFUQ-350",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "360": {
-            "n": {
-              "SYS": "If you do not see your favorite beer, will you…?"
-            },
-            "label": "VFUQ-360",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-360"
-              }
-            ]
-          }
-        },
-        {
-          "370": {
-            "n": {
-              "SYS": "Can the personel influence you order / purchase?"
-            },
-            "label": "VFUQ-370",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "380": {
-            "n": {
-              "SYS": "Do you like promotions?"
-            },
-            "label": "VFUQ-380",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "390": {
-            "n": {
-              "SYS": "What type of promotions would influence you to buy a brand? (ON)"
-            },
-            "label": "VFUQ-390",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-390"
-              }
-            ]
-          }
-        },
-        {
-          "400": {
-            "n": {
-              "SYS": "What type of promotions would influence you to buy a brand? (OFF)"
-            },
-            "label": "VFUQ-400",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-390"
-              }
-            ]
-          }
-        },
-        {
-          "410": {
-            "n": {
-              "SYS": "What are some of the challenges of your job?"
-            },
-            "label": "VFUQ-410",
-            "t": [
-              {
-                "t": "T"
-              }
-            ]
-          }
-        },
-        {
-          "420": {
-            "n": {
-              "SYS": "Are you searching for an assortment of beer brands?"
-            },
-            "label": "VFUQ-420",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "430": {
-            "n": {
-              "SYS": "Which beer brands is most important to you?"
-            },
-            "label": "VFUQ-430",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-300"
-              }
-            ]
-          }
-        },
-        {
-          "440": {
-            "n": {
-              "SYS": "Which services from your beer suppliers are most important to you?"
-            },
-            "label": "VFUQ-440",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-440"
-              }
-            ]
-          }
-        },
-        {
-          "450": {
-            "n": {
-              "SYS": "Which services are most important but are not being provided satisfactorily?"
-            },
-            "label": "VFUQ-450",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-440"
-              }
-            ]
-          }
-        },
-        {
-          "460": {
-            "n": {
-              "SYS": "What would you say helps your outlet to sell beer brands fastest?"
-            },
-            "label": "VFUQ-460",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-460"
-              }
-            ]
-          }
-        },
-        {
-          "470": {
-            "n": {
-              "SYS": "What activations have the biggest impact on your sales?"
-            },
-            "label": "VFUQ-470",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-470"
-              }
-            ]
-          }
-        },
-        {
-          "480": {
-            "n": {
-              "SYS": "What is the most important thing in the relationship with your beer supplier?"
-            },
-            "label": "VFUQ-480",
-            "t": [
-              {
-                "t": "O"
-              }
-            ]
-          }
-        },
-        {
-          "490": {
-            "n": {
-              "SYS": "What do you expect from an outlet like this?"
-            },
-            "label": "VFUQ-490",
-            "t": [
-              {
-                "t": "C",
-                "o": "LST-VFUQ-240"
-              }
-            ]
-          }
-        },
-        {
-          "500": {
-            "n": {
-              "SYS": "What do you drink if you don't drink beer?"
-            },
-            "label": "VFUQ-500",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-500"
-              }
-            ]
-          }
-        },
-        {
-          "510": {
-            "n": {
-              "SYS": "Do you generally order the same beer brand?"
-            },
-            "label": "VFUQ-510",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ]
-          }
-        },
-        {
-          "520": {
-            "n": {
-              "SYS": "Do you prefer bottles or cans?"
-            },
-            "label": "VFUQ-520",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-520"
-              }
-            ]
-          }
-        },
-        {
-          "530": {
-            "n": {
-              "SYS": "What size do you prefer?"
-            },
-            "label": "VFUQ-530",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-530"
-              }
-            ]
-          }
-        },
-        {
-          "540": {
-            "n": {
-              "SYS": "Do you prefer to drink beer warm or cold?"
-            },
-            "label": "VFUQ-540",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-540"
-              }
-            ]
-          }
-        },
-        {
-          "550": {
-            "n": {
-              "SYS": "For which main reasons do customers visit your outlet?"
-            },
-            "label": "VFUQ-550",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-240"
-              }
-            ]
-          }
-        },
-        {
-          "560": {
-            "n": {
-              "SYS": "How important are each of these beer brands in your outlet?"
-            },
-            "label": "VFUQ-560",
-            "t": [
-              {
-                "t": "T",
-                "o": "LST-VFUQ-300"
-              }
-            ]
-          }
-        },
-        {
-          "620": {
-            "n": {
-              "SYS": "What are the most consumed beers?"
-            },
-            "label": "VFUQ-620",
-            "t": [
-              {
-                "t": "C",
-                "o": "LST-VFUQ-300"
-              }
-            ]
-          }
-        },
-        {
-          "630": {
-            "n": {
-              "SYS": "How many bottles/cans do you drink when coming to this outlet?"
-            },
-            "label": "VFUQ-630",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "640": {
-            "n": {
-              "SYS": "How long do you normally stay?"
-            },
-            "label": "VFUQ-640",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-640"
-              }
-            ]
-          }
-        },
-        {
-          "650": {
-            "n": {
-              "SYS": "Where were you before you came here?"
-            },
-            "label": "VFUQ-650",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-650"
-              }
-            ]
-          }
-        },
-        {
-          "660": {
-            "n": {
-              "SYS": "Where do you go afterwards?"
-            },
-            "label": "VFUQ-660",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-650"
-              }
-            ]
-          }
-        },
-        {
-          "670": {
-            "n": {
-              "SYS": "What main activities do people come to do in this outlet ?"
-            },
-            "label": "VFUQ-670",
-            "t": [
-              {
-                "t": "C",
-                "o": "LST-VFUQ-670"
-              }
-            ]
-          }
-        },
-        {
-          "680": {
-            "n": {
-              "SYS": "Are they mostly sitting or standing?"
-            },
-            "label": "VFUQ-680",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-680"
-              }
-            ]
-          }
-        },
-        {
-          "690": {
-            "n": {
-              "SYS": "How do they order?"
-            },
-            "label": "VFUQ-690",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-690"
-              }
-            ]
-          }
-        },
-        {
-          "700": {
-            "n": {
-              "SYS": "What is the most purchased drink?"
-            },
-            "label": "VFUQ-700",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-700"
-              }
-            ]
-          }
-        },
-        {
-          "710": {
-            "n": {
-              "SYS": "What type of SKU is mostly displayed? (Bottles and Cans)"
-            },
-            "label": "VFUQ-710",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-710"
-              }
-            ]
-          }
-        },
-        {
-          "720": {
-            "n": {
-              "SYS": "What type of SKU is mostly sold? (Bottles and Cans)"
-            },
-            "label": "VFUQ-720",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-710"
-              }
-            ]
-          }
-        },
-        {
-          "730": {
-            "n": {
-              "SYS": "For whom do they order?"
-            },
-            "label": "VFUQ-730",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-730"
-              }
-            ]
-          }
-        },
-        {
-          "740": {
-            "n": {
-              "SYS": "What beer did the shopper purchase?"
-            },
-            "label": "VFUQ-740",
-            "t": [
-              {
-                "t": "C",
-                "o": "LST-VFUQ-300"
-              }
-            ]
-          }
-        },
-        {
-          "750": {
-            "n": {
-              "SYS": "When do you order your beer?"
-            },
-            "label": "VFUQ-750",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-750"
-              }
-            ]
-          }
-        },
-        {
-          "760": {
-            "n": {
-              "SYS": "How many times per week?"
-            },
-            "label": "VFUQ-760",
-            "t": [
-              {
-                "t": "N"
-              }
-            ]
-          }
-        },
-        {
-          "770": {
-            "n": {
-              "SYS": "Who makes the decision?"
-            },
-            "label": "VFUQ-770",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-770"
-              }
-            ]
-          }
-        },
-        {
-          "780": {
-            "n": {
-              "SYS": "Who places the order?"
-            },
-            "label": "VFUQ-780",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-770"
-              }
-            ]
-          }
-        },
-        {
-          "790": {
-            "n": {
-              "SYS": "How soon after the order is placed do the products arrive normally?"
-            },
-            "label": "VFUQ-790",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-VFUQ-790"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "W": {
-      "n": "W",
-      "p": [
-        {
-          "10": {
-            "n": {
-              "SYS": "Who are your customers?"
-            },
-            "label": "W-10",
-            "t": [
-              {
-                "t": "C"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        },
-        {
-          "20": {
-            "n": {
-              "SYS": "How many retailers do you service?"
-            },
-            "label": "W-20",
-            "t": [
-              {
-                "t": "N"
-              }
-            ],
-            "o": [
-              "e"
-            ]
-          }
-        },
-        {
-          "30": {
-            "n": {
-              "SYS": "How many sub wholesalers do you service?"
-            },
-            "label": "W-30",
-            "t": [
-              {
-                "t": "N"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        },
-        {
-          "40": {
-            "n": {
-              "SYS": "How many other type of clients do you service?"
-            },
-            "label": "W-40",
-            "t": [
-              {
-                "t": "N"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        },
-        {
-          "41": {
-            "n": {
-              "SYS": "Do you have an updated overview/list of your customers and their accounts?"
-            },
-            "label": "W-41",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ],
-            "o": [
-              "e",
-              "b",
-              "bp"
-            ]
-          }
-        },
-        {
-          "70": {
-            "n": {
-              "SYS": "Do you have a sales/delivery team?"
-            },
-            "label": "W-70",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ],
-            "o": [
-              "e"
-            ]
-          }
-        },
-        {
-          "110": {
-            "n": {
-              "SYS": "How many people work for your business?"
-            },
-            "label": "W-110",
-            "t": [
-              {
-                "t": "N"
-              }
-            ],
-            "o": [
-              "e",
-              "b"
-            ]
-          }
-        },
-        {
-          "132": {
-            "n": {
-              "SYS": "How long is the credit in weeks?"
-            },
-            "label": "W-132",
-            "t": [
-              {
-                "t": "N"
-              }
-            ],
-            "o": [
-              "e"
-            ]
-          }
-        },
-        {
-          "133": {
-            "n": {
-              "SYS": "What's the minimum value of invoices open for credit?"
-            },
-            "label": "W-133",
-            "t": [
-              {
-                "t": "N"
-              }
-            ],
-            "o": [
-              "e"
-            ]
-          }
-        },
-        {
-          "160": {
-            "n": {
-              "SYS": "How often do you buy per week (inbound stock)? Enter a number between 0 and 7"
-            },
-            "label": "W-160",
-            "t": [
-              {
-                "t": "N"
-              }
-            ],
-            "o": [
-              "e"
-            ]
-          }
-        },
-        {
-          "190": {
-            "n": {
-              "SYS": "How many vehicles do you have?"
-            },
-            "label": "W-190",
-            "t": [
-              {
-                "t": "N"
-              }
-            ],
-            "o": [
-              "e"
-            ]
-          }
-        },
-        {
-          "205": {
-            "n": {
-              "SYS": "Do you use a smartphone for your business?"
-            },
-            "label": "W-205",
-            "t": [
-              {
-                "t": "O",
-                "o": "LST-YES-NO"
-              }
-            ],
-            "o": [
-              "e"
-            ]
-          }
-        },
-        {
-          "250": {
-            "n": {
-              "SYS": "What's the most important thing your supplier should provide you?"
-            },
-            "label": "W-250",
-            "t": [
-              {
-                "t": "O"
-              }
-            ],
-            "o": [
-              "e"
             ]
           }
         }

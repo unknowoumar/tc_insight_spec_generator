@@ -44,6 +44,10 @@ QUESTION_SHEETS_EXCLUDE = {
     "Instructions",
     "Constants",
     "Lists to Update",
+    "Follow-up quality Distributor Q",
+    "C&C Driver Start",
+    "C&C Driver",
+    "Obs",  # Observation/reference sheet, not a question sheet
 }
 
 QUESTION_CODE_COLS = [
