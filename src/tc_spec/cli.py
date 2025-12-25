@@ -5,6 +5,8 @@ Interface en ligne de commande du générateur de Specs TC Insight.
 """
 
 import argparse
+import logging
+import os
 import sys
 from pathlib import Path
 
@@ -65,6 +67,12 @@ def create_parser() -> argparse.ArgumentParser:
 def main():
     parser = create_parser()
     args = parser.parse_args()
+
+    log_level = os.getenv("TC_SPEC_LOG_LEVEL", "WARNING").upper()
+    logging.basicConfig(
+        level=getattr(logging, log_level, logging.WARNING),
+        format="%(levelname)s:%(name)s:%(message)s",
+    )
 
     if args.command == "generate":
         if not args.validate_only and not args.out:

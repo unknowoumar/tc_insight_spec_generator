@@ -71,7 +71,7 @@ class Question:
 
         if self.roles:
             for r in self.roles:
-                if r not in {"e", "b", "u", "h"}:
+                if r not in {"e", "b", "bp", "u", "h"}:
                     raise SpecError(
                         f"Question {self.ref}: invalid role '{r}'"
                     )

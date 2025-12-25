@@ -54,6 +54,15 @@ def make_base_dfs():
             "value_type": "v",
             "value": "YES",
         }
+        ,
+        {
+            "target_type": "anomaly",
+            "target_ref": "ANO-A1",
+            "r_ref": "I-10",
+            "operator": "=",
+            "value_type": "v",
+            "value": "YES",
+        }
     ])
 
     anomalies = pd.DataFrame([
@@ -93,8 +102,10 @@ def test_build_questions():
     assert q.qtype["t"] == "N"
     assert len(q.visibility) == 1
 
-def test_build_questions():
+def test_build_questions_with_bp_role():
     questions_df, types_df, _, _, rules_df, _ = make_base_dfs()
+
+    questions_df.loc[0, "roles"] = "e,bp"
 
     rules = build_rules(rules_df)
     questions = build_questions(questions_df, types_df, rules)
@@ -105,6 +116,22 @@ def test_build_questions():
     assert q.ref == "V-50"
     assert q.qtype["t"] == "N"
     assert len(q.visibility) == 1
+
+    q_dict = q.to_dict()
+    assert q_dict["o"] == ["e", "bp"]
+
+
+def test_build_questions_without_roles_omits_o():
+    questions_df, types_df, _, _, rules_df, _ = make_base_dfs()
+
+    questions_df.loc[0, "roles"] = None
+
+    rules = build_rules(rules_df)
+    questions = build_questions(questions_df, types_df, rules)
+    q = questions["V-50"]
+
+    q_dict = q.to_dict()
+    assert "o" not in q_dict
 
 def test_build_sections():
     questions_df, types_df, sections_df, _, rules_df, _ = make_base_dfs()

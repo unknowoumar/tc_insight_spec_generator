@@ -44,7 +44,11 @@ def map_excel_to_machine_first(
             "Mapping failed: QUESTIONS must contain a 'type' column to build QUESTION_TYPES"
         )
 
-    question_types_df = questions_df[["section", "q_num", "type"]].copy()
+    # Include list_code and other type-related columns for question types
+    type_cols = ["section", "q_num", "type"]
+    if "list_code" in questions_df.columns:
+        type_cols.append("list_code")
+    question_types_df = questions_df[type_cols].copy()
 
     if "section" not in questions_df.columns:
         raise ExcelValidationError(

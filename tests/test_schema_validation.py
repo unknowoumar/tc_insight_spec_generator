@@ -10,24 +10,26 @@ def test_valid_spec_schema():
     valid_spec = {
         "n": "TC Insight Test",
         "v": "2.0.0",
-        "s": [
-            {
-                "c": "V",
+        "s": {
+            "V": {
                 "n": "Volume",
-                "q": [
+                "p": [
                     {
-                        "r": "V-50",
-                        "l": "Q_V_50",
-                        "n": {
-                            "SYS": "How many units?"
-                        },
-                        "t": {
-                            "t": "N"
+                        "V-50": {
+                            "label": "Q_V_50",
+                            "n": {
+                                "SYS": "How many units?"
+                            },
+                            "t": [
+                                {
+                                    "t": "N"
+                                }
+                            ]
                         }
                     }
                 ]
             }
-        ],
+        },
         "l": {},
         "a": {}
     }
@@ -80,9 +82,11 @@ def test_invalid_sections_structure():
     invalid_spec = {
         "n": "Invalid Spec",
         "v": "2.0.0",
-        "s": {  # devrait être une liste
-            "c": "V"
-        },
+        "s": [  # devrait être un objet (mapping)
+            {
+                "c": "V"
+            }
+        ],
         "l": {},
         "a": {}
     }
