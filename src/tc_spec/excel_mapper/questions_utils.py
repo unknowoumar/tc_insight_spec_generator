@@ -93,6 +93,8 @@ def map_metier_type_to_code(raw_type: object) -> str:
 
     t_upper = t.upper()
 
+    if "NOTE" in t_upper:
+        return "-"
     if "NUMER" in t_upper:
         return "N"
     if "SINGLE" in t_upper:
