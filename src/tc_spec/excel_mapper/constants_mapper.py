@@ -52,8 +52,47 @@ def build_list_name_to_code_index(sheets: Dict[str, pd.DataFrame]) -> Dict[str, 
     
     Returns a dict mapping normalized list names to list codes.
     Example: {"gender": "LST-VFUQ-10", "age group": "LST-VFUQ-20", "interviewee roles": "LST-I-20"}
+    
+    Creates multiple variants of each list name to handle variations:
+    - Original name
+    - Name without parentheses
+    - Singular/plural variations
     """
     index = {}
+    
+    def add_name_variants(list_name: str, list_code: str):
+        """Add multiple variants of a list name to the index."""
+        if not list_name:
+            return
+        
+        list_name_normalized = list_name.lower().strip()
+        
+        # Add original name
+        index[list_name_normalized] = list_code
+        
+        # Add version without parentheses and their content
+        name_no_parens = re.sub(r'\s*\([^)]*\)\s*', ' ', list_name_normalized).strip()
+        if name_no_parens != list_name_normalized:
+            index[name_no_parens] = list_code
+        
+        # Add singular/plural variations for each word in the name
+        # Split by spaces and try singular/plural for each word
+        words = name_no_parens.split()
+        for i, word in enumerate(words):
+            # Try singular (remove 's' from end)
+            if word.endswith('s') and len(word) > 2:
+                singular_word = word[:-1]
+                variant_words = words.copy()
+                variant_words[i] = singular_word
+                variant = ' '.join(variant_words)
+                index[variant] = list_code
+            # Try plural (add 's' to end)
+            else:
+                plural_word = word + 's'
+                variant_words = words.copy()
+                variant_words[i] = plural_word
+                variant = ' '.join(variant_words)
+                index[variant] = list_code
     
     # Parse C&C Lists to extract list names
     cc_lists = sheets.get('C&C Lists')
@@ -65,14 +104,10 @@ def build_list_name_to_code_index(sheets: Dict[str, pd.DataFrame]) -> Dict[str, 
             # New list starts when col0 looks like a question code
             if col0 and re.match(r'^[A-Z]+-\d+$', col0):
                 list_name = col1.strip()
-                list_name_normalized = list_name.lower().strip()
                 list_code = f"LST-{col0}"
                 
-                if list_name_normalized:
-                    # Map name to question-code-based list code
-                    # If duplicate names exist, last one wins (acceptable for now)
-                    index[list_name_normalized] = list_code
-                    logger.debug("Constants index: %s -> %s", list_name_normalized, list_code)
+                add_name_variants(list_name, list_code)
+                logger.debug("Constants index: %s -> %s", list_name.lower(), list_code)
     
     # Parse I&M Lists to extract list names
     im_lists = sheets.get('I&M Lists')
@@ -81,25 +116,41 @@ def build_list_name_to_code_index(sheets: Dict[str, pd.DataFrame]) -> Dict[str, 
             col0 = str(row[0]).strip() if pd.notna(row[0]) else ''
             col1 = str(row[1]).strip() if pd.notna(row[1]) else ''
             col2 = str(row[2]).strip() if pd.notna(row[2]) and len(row) > 2 else ''
+            col3 = str(row[3]).strip() if pd.notna(row[3]) and len(row) > 3 else ''
             col4 = str(row[4]).strip() if pd.notna(row[4]) and len(row) > 4 else ''
             
-            # Skip header and items rows
-            if col1 == 'Question' or col2 == 'Code' or col0.startswith('{ "v":'):
+            # Skip main header row
+            if col1 == 'Question' or col2 == 'Code':
                 continue
             
-            # New list starts when col1 looks like a question code
-            if col1 and re.match(r'^[A-Z]+-?\d*$', col1):
+            # New list starts when col1 looks like a question code or range
+            # This can happen even if col0 contains { "v": "
+            is_list_header = False
+            if col1:
+                # Check for single question code
+                if re.match(r'^[A-Z]+-?\d*$', col1):
+                    is_list_header = True
+                # Check for question code range (e.g., "D-10 ... D-50")
+                elif re.match(r'^[A-Z]+-\d+\s*\.\.\.\s*[A-Z]+-\d+$', col1):
+                    is_list_header = True
+            
+            # Skip list item rows (but not list header rows)
+            if col0.startswith('{ "v":') and not is_list_header:
+                continue
+            
+            if is_list_header:
                 list_name = col4 if col4 else ''
-                list_name_normalized = list_name.lower().strip()
                 
-                # Generate list_code from col4 by slugifying
-                list_name_slug = re.sub(r'[^a-z0-9]+', '-', list_name.lower()).strip('-').upper()
-                list_code = f"LST-{list_name_slug}"
+                # Use col3 if it contains a list code (LST-*), otherwise generate from name
+                if col3 and col3.startswith('LST-'):
+                    list_code = col3
+                else:
+                    # Generate list_code from col4 by slugifying
+                    list_name_slug = re.sub(r'[^a-z0-9]+', '-', list_name.lower()).strip('-').upper()
+                    list_code = f"LST-{list_name_slug}"
                 
-                if list_name_normalized:
-                    # Map name to slugified list code
-                    index[list_name_normalized] = list_code
-                    logger.debug("Constants index (I&M): %s -> %s", list_name_normalized, list_code)
+                add_name_variants(list_name, list_code)
+                logger.debug("Constants index (I&M): %s -> %s", list_name.lower(), list_code)
     
     logger.info("Constants: built index with %d list name mappings", len(index))
     return index
@@ -165,16 +216,16 @@ def _parse_im_lists(raw_df: pd.DataFrame) -> List[dict]:
     Parse I&M Lists sheet format:
     
     The sheet has a header row at index 0:
-    Question | Code | ... | Question Wording ENGLISH
+    Question | Code | ... | Question Wording ENGLISH | ... | List Code
     
     Then each list section starts with a header row:
-    NaN | I-20 | IR | ... | Interviewee Roles
+    NaN | I-20 | IR | ... | Interviewee Roles | ... | LST-INTERVIEWEE-ROLES
     
     Followed by item rows:
     { "v": " | 1 | IR-1 | ... | Manager
     { "v": " | 2 | IR-2 | ... | Owner
     
-    We generate list_code from col4 (list name) by slugifying it.
+    We use the explicit list_code from col8 if available, otherwise generate from col4 (list name).
     """
     rows = []
     current_list_code = None
@@ -185,27 +236,44 @@ def _parse_im_lists(raw_df: pd.DataFrame) -> List[dict]:
         col0 = str(row[0]).strip() if pd.notna(row[0]) else ''
         col1 = str(row[1]).strip() if pd.notna(row[1]) else ''
         col2 = str(row[2]).strip() if pd.notna(row[2]) and len(row) > 2 else ''
+        col3 = str(row[3]).strip() if pd.notna(row[3]) and len(row) > 3 else ''
         col4 = str(row[4]).strip() if pd.notna(row[4]) and len(row) > 4 else ''
         
-        # Skip header row and empty rows
+        # Skip main header row and empty rows
         if col1 == 'Question' or col2 == 'Code' or (not col1 and not col2):
             continue
         
         # New list starts when col1 looks like a question code (e.g., I-20, W-250, PT)
-        # This can happen with or without { "v": " in col0
-        if col1 and re.match(r'^[A-Z]+-?\d*$', col1):
-            # Generate list_code from col4 (list name) by slugifying
-            # e.g., "Interviewee Roles" -> "LST-INTERVIEWEE-ROLES"
+        # or a range of question codes (e.g., D-10 ... D-50)
+        # This can happen even if col0 contains { "v": "
+        is_list_header = False
+        if col1:
+            # Check for single question code
+            if re.match(r'^[A-Z]+-?\d*$', col1):
+                is_list_header = True
+            # Check for question code range (e.g., "D-10 ... D-50")
+            elif re.match(r'^[A-Z]+-\d+\s*\.\.\.\s*[A-Z]+-\d+$', col1):
+                is_list_header = True
+        
+        if is_list_header:
             list_name = col4 if col4 else col2
-            list_name_slug = re.sub(r'[^a-z0-9]+', '-', list_name.lower()).strip('-').upper()
-            current_list_code = f"LST-{list_name_slug}"
+            
+            # Use explicit list_code from col3 if available, otherwise generate from name
+            if col3 and col3.startswith('LST-'):
+                current_list_code = col3
+            else:
+                # Generate list_code from col4 (list name) by slugifying
+                # e.g., "Interviewee Roles" -> "LST-INTERVIEWEE-ROLES"
+                list_name_slug = re.sub(r'[^a-z0-9]+', '-', list_name.lower()).strip('-').upper()
+                current_list_code = f"LST-{list_name_slug}"
+            
             current_list_name = list_name
             order = 1
             logger.debug("Constants: found I&M list %s (%s)", current_list_code, current_list_name)
-        elif col0.startswith('{ "v":') and current_list_code and col2 and col1.isdigit():
+        elif current_list_code and col2 and col1.isdigit():
             # This is a list item
             # col1 is the order number
-            # col2 contains the value code (e.g., IR-1, SUS-1)
+            # col2 contains the value code (e.g., SOUR-1, IR-1, SUS-1)
             # col4 contains the label text
             value_code = col2
             value_text = col4 if col4 else col2

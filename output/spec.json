@@ -320,7 +320,7 @@
             "t": [
               {
                 "t": "O",
-                "o": "LST-INTERVIEWEE-ROLES"
+                "o": "LST-INTERVIEWEE-ROLE"
               }
             ],
             "o": [
@@ -357,6 +357,9 @@
               {
                 "t": "-"
               }
+            ],
+            "o": [
+              "b"
             ]
           }
         },
@@ -369,7 +372,7 @@
             "t": [
               {
                 "t": "O",
-                "o": "LST-IFUQ-40"
+                "o": "LST-CONTINUE"
               }
             ],
             "o": [
@@ -386,7 +389,8 @@
             "label": "I-130",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-SEGMENT"
               }
             ],
             "o": [
@@ -421,7 +425,8 @@
             "label": "I-131",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-SEGMENT-RETAIL-CHANNEL"
               }
             ],
             "o": [
@@ -438,7 +443,8 @@
             "label": "I-133",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-SEGMENT-WHOLESALER-CHANNEL"
               }
             ],
             "o": [
@@ -784,7 +790,8 @@
             "label": "W-250",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-SUPPLIER-SUPPORT"
               }
             ],
             "o": [
@@ -823,6 +830,9 @@
               {
                 "t": "O"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -837,6 +847,9 @@
                 "t": "O",
                 "o": "LST-YES-NO"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1060,13 +1073,17 @@
         {
           "10": {
             "n": {
-              "SYS": "Where do you mainly source your JTI cigarettes from?"
+              "SYS": "Where do you mainly source your  cigarettes from?"
             },
             "label": "D-10",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-SOURCE"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1078,8 +1095,12 @@
             "label": "D-11",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-DFUQ-80"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1093,6 +1114,9 @@
               {
                 "t": "N"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1185,19 +1209,26 @@
               {
                 "t": "O"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
         {
           "20": {
             "n": {
-              "SYS": "Where do you mainly source your BAT cigarettes from?"
+              "SYS": "Where do you mainly source your  cigarettes from?"
             },
             "label": "D-20",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-SOURCE"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1209,8 +1240,12 @@
             "label": "D-21",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-DFUQ-80"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1224,6 +1259,9 @@
               {
                 "t": "N"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1314,21 +1352,29 @@
             "label": "D-29",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-WHOLESALERS-DISTRIBUTORS"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
         {
           "30": {
             "n": {
-              "SYS": "Where do you mainly source your PMI cigarettes from?"
+              "SYS": "Where do you mainly source your  cigarettes from?"
             },
             "label": "D-30",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-SOURCE"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1340,8 +1386,12 @@
             "label": "D-31",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-DFUQ-80"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1355,6 +1405,9 @@
               {
                 "t": "N"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1445,21 +1498,29 @@
             "label": "D-39",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-WHOLESALERS-DISTRIBUTORS"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
         {
           "40": {
             "n": {
-              "SYS": "Where do you mainly source your Oriental cigarettes from?"
+              "SYS": "Where do you mainly source your  cigarettes from?"
             },
             "label": "D-40",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-SOURCE"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1471,8 +1532,12 @@
             "label": "D-41",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-DFUQ-80"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1486,6 +1551,9 @@
               {
                 "t": "N"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1576,21 +1644,29 @@
             "label": "D-49",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-WHOLESALERS-DISTRIBUTORS"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
         {
           "50": {
             "n": {
-              "SYS": "Where do you mainly source your KT&G cigarettes from?(UTC new name)"
+              "SYS": "Where do you mainly source your  cigarettes from?(UTC new name)"
             },
             "label": "D-50",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-SOURCE"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1602,8 +1678,12 @@
             "label": "D-51",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-DFUQ-80"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1617,6 +1697,9 @@
               {
                 "t": "N"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1707,8 +1790,12 @@
             "label": "D-59",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-WHOLESALERS-DISTRIBUTORS"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -1812,7 +1899,8 @@
             "label": "D-70",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-SOURCE"
               }
             ]
           }
@@ -1825,7 +1913,8 @@
             "label": "D-71",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-DFUQ-80"
               }
             ]
           }
@@ -1930,7 +2019,8 @@
             "label": "D-79",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-WHOLESALERS-DISTRIBUTORS"
               }
             ]
           }
@@ -1943,7 +2033,8 @@
             "label": "D-80",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-SOURCE"
               }
             ]
           }
@@ -1956,7 +2047,8 @@
             "label": "D-81",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-DFUQ-80"
               }
             ]
           }
@@ -2061,7 +2153,8 @@
             "label": "D-89",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-WHOLESALERS-DISTRIBUTORS"
               }
             ]
           }
@@ -2069,12 +2162,13 @@
         {
           "90": {
             "n": {
-              "SYS": "Where do you mainly source your PMI cigarettes from?"
+              "SYS": "Where do you mainly source your  cigarettes from?"
             },
             "label": "D-90",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-SOURCE"
               }
             ]
           }
@@ -2087,7 +2181,8 @@
             "label": "D-91",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-DFUQ-80"
               }
             ]
           }
@@ -2192,7 +2287,8 @@
             "label": "D-99",
             "t": [
               {
-                "t": "O"
+                "t": "O",
+                "o": "LST-WHOLESALERS-DISTRIBUTORS"
               }
             ]
           }
@@ -2207,13 +2303,16 @@
               {
                 "t": "C"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
         {
           "101": {
             "n": {
-              "SYS": "How many times per month does the JTI Sales Reps visit you?"
+              "SYS": "How many times per month does the  Sales Reps visit you?"
             },
             "label": "D-101",
             "t": [
@@ -2221,13 +2320,16 @@
                 "t": "O",
                 "o": "LST-VFUQ-160"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
         {
           "102": {
             "n": {
-              "SYS": "How many times per month does the BAT Sales Reps visit you?"
+              "SYS": "How many times per month does the  Sales Reps visit you?"
             },
             "label": "D-102",
             "t": [
@@ -2235,13 +2337,16 @@
                 "t": "O",
                 "o": "LST-VFUQ-160"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
         {
           "103": {
             "n": {
-              "SYS": "How many times per month does the PMI Sales Reps visit you?"
+              "SYS": "How many times per month does the  Sales Reps visit you?"
             },
             "label": "D-103",
             "t": [
@@ -2249,13 +2354,16 @@
                 "t": "O",
                 "o": "LST-VFUQ-160"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
         {
           "104": {
             "n": {
-              "SYS": "How many times per month does the Oriental Sales Reps visit you?"
+              "SYS": "How many times per month does the  Sales Reps visit you?"
             },
             "label": "D-104",
             "t": [
@@ -2263,13 +2371,16 @@
                 "t": "O",
                 "o": "LST-VFUQ-160"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
         {
           "105": {
             "n": {
-              "SYS": "How many times per month does the KT&G Sales Reps visit you?"
+              "SYS": "How many times per month does the  Sales Reps visit you?"
             },
             "label": "D-105",
             "t": [
@@ -2277,13 +2388,16 @@
                 "t": "O",
                 "o": "LST-VFUQ-160"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
         {
           "106": {
             "n": {
-              "SYS": "How many times per month does the Other Sales Reps visit you?"
+              "SYS": "How many times per month does the  Sales Reps visit you?"
             },
             "label": "D-106",
             "t": [
@@ -2291,6 +2405,9 @@
                 "t": "O",
                 "o": "LST-VFUQ-160"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -2325,7 +2442,7 @@
         {
           "109": {
             "n": {
-              "SYS": "How many times per month does the PMI Sales Reps visit you?"
+              "SYS": "How many times per month does the  Sales Reps visit you?"
             },
             "label": "D-109",
             "t": [
@@ -2365,7 +2482,7 @@
         {
           "208": {
             "n": {
-              "SYS": "From how many suppliers do you source your PMI products?"
+              "SYS": "From how many suppliers do you source your  products?"
             },
             "label": "D-208",
             "t": [
@@ -2404,7 +2521,7 @@
         {
           "308": {
             "n": {
-              "SYS": "How would you rate overall quality of service of your main PMI supplier?"
+              "SYS": "How would you rate overall quality of service of your main  supplier?"
             },
             "label": "D-308",
             "t": [
@@ -2446,6 +2563,9 @@
               {
                 "t": "-"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -2459,6 +2579,9 @@
               {
                 "t": "T"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -2472,6 +2595,9 @@
               {
                 "t": "T"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -2589,6 +2715,9 @@
               {
                 "t": "-"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -2602,6 +2731,9 @@
               {
                 "t": "T"
               }
+            ],
+            "o": [
+              "e"
             ]
           }
         },
@@ -2617,6 +2749,7 @@
               }
             ],
             "o": [
+              "e",
               "b",
               "bp"
             ]
@@ -2634,6 +2767,7 @@
               }
             ],
             "o": [
+              "e",
               "b",
               "bp"
             ]
@@ -2682,6 +2816,7 @@
               }
             ],
             "o": [
+              "e",
               "b",
               "bp"
             ]
@@ -2699,6 +2834,7 @@
               }
             ],
             "o": [
+              "e",
               "b"
             ]
           }
@@ -5399,45 +5535,7 @@
         }
       }
     ],
-    "LST-CATEGORIES": [
-      {
-        "v": "CAT-1",
-        "n": {
-          "SYS": "Tobacco (in Packs)"
-        }
-      },
-      {
-        "v": "CAT-2",
-        "n": {
-          "SYS": "Tobacco (in Bundle)"
-        }
-      },
-      {
-        "v": "CAT-3",
-        "n": {
-          "SYS": "Tobacco WHOLESALER (in Master Case)"
-        }
-      },
-      {
-        "v": "CAT-4",
-        "n": {
-          "SYS": "Shisa (in Kg)"
-        }
-      },
-      {
-        "v": "CAT-5",
-        "n": {
-          "SYS": "Evapes"
-        }
-      },
-      {
-        "v": "CAT-6",
-        "n": {
-          "SYS": "Electronic cigarettes"
-        }
-      }
-    ],
-    "LST-CONTINUE-SURVEY": [
+    "LST-CONTINUE": [
       {
         "v": "CO-1",
         "n": {
@@ -5500,94 +5598,6 @@
         "v": "DFUQ-80-4",
         "n": {
           "SYS": "active selling"
-        }
-      }
-    ],
-    "LST-DIGITAL-APPS": [
-      {
-        "v": "SOUR-1",
-        "n": {
-          "SYS": "Never in my assortment"
-        }
-      },
-      {
-        "v": "SOUR-2",
-        "n": {
-          "SYS": "Wholesaler Delivery"
-        }
-      },
-      {
-        "v": "SOUR-3",
-        "n": {
-          "SYS": "Wholelsaler Pick-up"
-        }
-      },
-      {
-        "v": "SOUR-4",
-        "n": {
-          "SYS": "Semi-Wholesaler Delivery"
-        }
-      },
-      {
-        "v": "SOUR-5",
-        "n": {
-          "SYS": "Semi-Wholesaler Pick-up"
-        }
-      },
-      {
-        "v": "SOUR-6",
-        "n": {
-          "SYS": "Retailer (supermarket, ect) pick-up"
-        }
-      },
-      {
-        "v": "SOUR-7",
-        "n": {
-          "SYS": "Trade and Marketing rep top up sales"
-        }
-      },
-      {
-        "v": "SOUR-8",
-        "n": {
-          "SYS": "multi-brand saler"
-        }
-      },
-      {
-        "v": "SOUR-9",
-        "n": {
-          "SYS": "Distributor / Sub Distributor"
-        }
-      }
-    ],
-    "LST-DISTRIBUTOR": [
-      {
-        "v": "DIS-1",
-        "n": {
-          "SYS": "Less than 10%"
-        }
-      },
-      {
-        "v": "DIS-2",
-        "n": {
-          "SYS": "Between 10 - 20%"
-        }
-      },
-      {
-        "v": "DIS-3",
-        "n": {
-          "SYS": "Between 20 - 30%"
-        }
-      },
-      {
-        "v": "DIS-4",
-        "n": {
-          "SYS": "Between 30 - 40%"
-        }
-      },
-      {
-        "v": "DIS-5",
-        "n": {
-          "SYS": "Between 40 - 50%"
         }
       }
     ],
@@ -5657,7 +5667,7 @@
         }
       }
     ],
-    "LST-INTERVIEWEE-ROLES": [
+    "LST-INTERVIEWEE-ROLE": [
       {
         "v": "IR-1",
         "n": {
@@ -5691,7 +5701,77 @@
         }
       }
     ],
-    "LST-REGION": [
+    "LST-PER-DISTRIBUTION": [
+      {
+        "v": "DIS-1",
+        "n": {
+          "SYS": "Less than 10%"
+        }
+      },
+      {
+        "v": "DIS-2",
+        "n": {
+          "SYS": "Between 10 - 20%"
+        }
+      },
+      {
+        "v": "DIS-3",
+        "n": {
+          "SYS": "Between 20 - 30%"
+        }
+      },
+      {
+        "v": "DIS-4",
+        "n": {
+          "SYS": "Between 30 - 40%"
+        }
+      },
+      {
+        "v": "DIS-5",
+        "n": {
+          "SYS": "Between 40 - 50%"
+        }
+      }
+    ],
+    "LST-PRODUCT-CATEGORIES": [
+      {
+        "v": "CAT-1",
+        "n": {
+          "SYS": "Tobacco (in Packs)"
+        }
+      },
+      {
+        "v": "CAT-2",
+        "n": {
+          "SYS": "Tobacco (in Bundle)"
+        }
+      },
+      {
+        "v": "CAT-3",
+        "n": {
+          "SYS": "Tobacco WHOLESALER (in Master Case)"
+        }
+      },
+      {
+        "v": "CAT-4",
+        "n": {
+          "SYS": "Shisa (in Kg)"
+        }
+      },
+      {
+        "v": "CAT-5",
+        "n": {
+          "SYS": "Evapes"
+        }
+      },
+      {
+        "v": "CAT-6",
+        "n": {
+          "SYS": "Electronic cigarettes"
+        }
+      }
+    ],
+    "LST-REGION-DYN": [
       {
         "v": "REG-1",
         "n": {
@@ -5711,63 +5791,7 @@
         }
       }
     ],
-    "LST-RETAILER-CHANNEL": [
-      {
-        "v": "RET-1",
-        "n": {
-          "SYS": "Shop"
-        }
-      },
-      {
-        "v": "RET-2",
-        "n": {
-          "SYS": "Kiosk"
-        }
-      },
-      {
-        "v": "RET-3",
-        "n": {
-          "SYS": "Apron"
-        }
-      },
-      {
-        "v": "RET-4",
-        "n": {
-          "SYS": "Supermarket"
-        }
-      },
-      {
-        "v": "RET-5",
-        "n": {
-          "SYS": "Fuel station"
-        }
-      },
-      {
-        "v": "RET-6",
-        "n": {
-          "SYS": "Bar (Snack Bar, Bar)"
-        }
-      },
-      {
-        "v": "RET-7",
-        "n": {
-          "SYS": "Cave"
-        }
-      },
-      {
-        "v": "RET-8",
-        "n": {
-          "SYS": "Bakery"
-        }
-      },
-      {
-        "v": "RET-9",
-        "n": {
-          "SYS": "Tobacconit"
-        }
-      }
-    ],
-    "LST-SALES-REP": [
+    "LST-SALES-REPS-DYN": [
       {
         "v": "SR-1",
         "n": {
@@ -5829,7 +5853,7 @@
         }
       }
     ],
-    "LST-SEGMENT-OPTIONS": [
+    "LST-SEGMENT": [
       {
         "v": "SEG-1",
         "n": {
@@ -5840,6 +5864,170 @@
         "v": "SEG-2",
         "n": {
           "SYS": "To other retailers"
+        }
+      }
+    ],
+    "LST-SEGMENT-RETAIL-CHANNEL": [
+      {
+        "v": "RET-1",
+        "n": {
+          "SYS": "Shop"
+        }
+      },
+      {
+        "v": "RET-2",
+        "n": {
+          "SYS": "Kiosk"
+        }
+      },
+      {
+        "v": "RET-3",
+        "n": {
+          "SYS": "Apron"
+        }
+      },
+      {
+        "v": "RET-4",
+        "n": {
+          "SYS": "Supermarket"
+        }
+      },
+      {
+        "v": "RET-5",
+        "n": {
+          "SYS": "Fuel station"
+        }
+      },
+      {
+        "v": "RET-6",
+        "n": {
+          "SYS": "Bar (Snack Bar, Bar)"
+        }
+      },
+      {
+        "v": "RET-7",
+        "n": {
+          "SYS": "Cave"
+        }
+      },
+      {
+        "v": "RET-8",
+        "n": {
+          "SYS": "Bakery"
+        }
+      },
+      {
+        "v": "RET-9",
+        "n": {
+          "SYS": "Tobacconit"
+        }
+      }
+    ],
+    "LST-SEGMENT-WHOLESALER-CHANNEL": [
+      {
+        "v": "WHO-1",
+        "n": {
+          "SYS": "Wholesaler"
+        }
+      },
+      {
+        "v": "WHO-2",
+        "n": {
+          "SYS": "Semi-wholesaler"
+        }
+      }
+    ],
+    "LST-SEGMENT-WHOLESALER-CUSTOMER": [
+      {
+        "v": "WCU-1",
+        "n": {
+          "SYS": "Shop"
+        }
+      },
+      {
+        "v": "WCU-2",
+        "n": {
+          "SYS": "Kiosk"
+        }
+      },
+      {
+        "v": "WCU-3",
+        "n": {
+          "SYS": "Apron"
+        }
+      },
+      {
+        "v": "WCU-4",
+        "n": {
+          "SYS": "Supermarket"
+        }
+      },
+      {
+        "v": "WCU-5",
+        "n": {
+          "SYS": "Fuel station"
+        }
+      },
+      {
+        "v": "WCU-6",
+        "n": {
+          "SYS": "Semi-Grossiste"
+        }
+      }
+    ],
+    "LST-SOURCE": [
+      {
+        "v": "SOUR-1",
+        "n": {
+          "SYS": "Never in my assortment"
+        }
+      },
+      {
+        "v": "SOUR-2",
+        "n": {
+          "SYS": "Wholesaler Delivery"
+        }
+      },
+      {
+        "v": "SOUR-3",
+        "n": {
+          "SYS": "Wholelsaler Pick-up"
+        }
+      },
+      {
+        "v": "SOUR-4",
+        "n": {
+          "SYS": "Semi-Wholesaler Delivery"
+        }
+      },
+      {
+        "v": "SOUR-5",
+        "n": {
+          "SYS": "Semi-Wholesaler Pick-up"
+        }
+      },
+      {
+        "v": "SOUR-6",
+        "n": {
+          "SYS": "Retailer (supermarket, ect) pick-up"
+        }
+      },
+      {
+        "v": "SOUR-7",
+        "n": {
+          "SYS": "Trade and Marketing rep top up sales"
+        }
+      },
+      {
+        "v": "SOUR-8",
+        "n": {
+          "SYS": "multi-brand saler"
+        }
+      },
+      {
+        "v": "SOUR-9",
+        "n": {
+          "SYS": "Distributor / Sub Distributor"
         }
       }
     ],
@@ -5956,6 +6144,26 @@
         "v": "SUP-10",
         "n": {
           "SYS": "SUP-10"
+        }
+      }
+    ],
+    "LST-TRADE-LICENSE": [
+      {
+        "v": "REG-1",
+        "n": {
+          "SYS": "Provincial License"
+        }
+      },
+      {
+        "v": "REG-2",
+        "n": {
+          "SYS": "National License"
+        }
+      },
+      {
+        "v": "REG-3",
+        "n": {
+          "SYS": "No License"
         }
       }
     ],
@@ -7414,58 +7622,6 @@
         "v": "VFUQ-90-12",
         "n": {
           "SYS": "Sunday"
-        }
-      }
-    ],
-    "LST-WHOLESALER-CHANNEL": [
-      {
-        "v": "WHO-1",
-        "n": {
-          "SYS": "Wholesaler"
-        }
-      },
-      {
-        "v": "WHO-2",
-        "n": {
-          "SYS": "Semi-wholesaler"
-        }
-      }
-    ],
-    "LST-WHOLESALER-CUSTOMER": [
-      {
-        "v": "WCU-1",
-        "n": {
-          "SYS": "Shop"
-        }
-      },
-      {
-        "v": "WCU-2",
-        "n": {
-          "SYS": "Kiosk"
-        }
-      },
-      {
-        "v": "WCU-3",
-        "n": {
-          "SYS": "Apron"
-        }
-      },
-      {
-        "v": "WCU-4",
-        "n": {
-          "SYS": "Supermarket"
-        }
-      },
-      {
-        "v": "WCU-5",
-        "n": {
-          "SYS": "Fuel station"
-        }
-      },
-      {
-        "v": "WCU-6",
-        "n": {
-          "SYS": "Semi-Grossiste"
         }
       }
     ],
