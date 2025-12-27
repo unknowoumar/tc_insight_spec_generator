@@ -17,6 +17,7 @@ from tc_spec.excel_mapper.metier_utils import (
     slugify_list_code,
 )
 from tc_spec.excel_mapper.constants_mapper import build_list_name_to_code_index
+from tc_spec.excel_mapper.visibility_parser import parse_visibility_rule
 from tc_spec.excel_mapper.questions_utils import (
     is_removed_by_priority,
     is_yes,
@@ -97,6 +98,12 @@ QUESTION_PRIORITY_COLS = [
     "Question Priority",
 ]
 
+QUESTION_VISIBILITY_COLS = [
+    "Visibility rule",
+    "Visibility",
+    "visibility rule",
+]
+
 def is_question_sheet(sheet_name: str) -> bool:
     """
     Détermine si une feuille est une feuille de questions.
@@ -124,6 +131,9 @@ def map_questions(
 
     rows: List[dict] = []
     seen_keys: set[tuple[str, str]] = set()
+    
+    # Store section visibility rules (will be added to pipeline later)
+    section_visibility_rules: Dict[str, list] = {}
 
     for sheet_name, df in question_sheets.items():
         if df.empty:
@@ -190,8 +200,30 @@ def map_questions(
             (c for c in QUESTION_PRIORITY_COLS if c in df.columns),
             None
         )
+        
+        visibility_col = next(
+            (c for c in QUESTION_VISIBILITY_COLS if c in df.columns),
+            None
+        )
+        
         for _, row in df.iterrows():
             if priority_col and is_removed_by_priority(row.get(priority_col)):
+                continue
+
+            # Check for "Section" rows (used for section visibility rules)
+            code_value = normalize_str(row.get(code_col))
+            if code_value and code_value.lower() == 'section':
+                # Extract section visibility rule
+                if visibility_col:
+                    rule_str = normalize_str(row.get(visibility_col))
+                    if rule_str:
+                        section_vis_rule = parse_visibility_rule(rule_str)
+                        if section_vis_rule:
+                            # Store by sheet name, will be mapped to section code in pipeline
+                            section_visibility_rules[sheet_name] = section_vis_rule
+                            logger.debug(f"Sheet '{sheet_name}': extracted section visibility rule")
+                
+                logger.debug("Questions: skipping 'Section' row (visibility rule)")
                 continue
 
             refs = parse_question_refs(row.get(code_col))
@@ -274,6 +306,16 @@ def map_questions(
                 normalize_str(row.get(mandatory_col)) == "Y"
                 if mandatory_col else False
             )
+            
+            # Extract visibility rule
+            visibility_rule = None
+            if visibility_col:
+                rule_str = normalize_str(row.get(visibility_col))
+                if rule_str:
+                    visibility_rule = parse_visibility_rule(rule_str)
+                    if visibility_rule:
+                        logger.debug(f"Questions: {refs[0] if refs else 'unknown'} has visibility rule: {rule_str}")
+            
             for section, q_num in refs:
                 key = (section, q_num)
                 if key in seen_keys:
@@ -290,6 +332,7 @@ def map_questions(
                     "list_code": list_code,
                     "roles": ",".join(roles) if roles else None,
                     "mandatory": "Y" if mandatory else "N",
+                    "visibility": visibility_rule,
                 })
 
                 order += 1
@@ -299,5 +342,8 @@ def map_questions(
         raise ExcelValidationError(
             "QUESTIONS mapping produced an empty DataFrame"
         )
+    
+    # Store section visibility rules as DataFrame attribute for later use
+    questions_df.attrs['section_visibility_rules'] = section_visibility_rules
 
     return questions_df

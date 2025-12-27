@@ -1,9 +1,9 @@
-from typing import Dict
+from typing import Dict, List, Any
 
 import pandas as pd
 
 from tc_spec.model.question import Question
-from tc_spec.model.rule import Rule
+from tc_spec.model.rule import Rule, Condition
 from tc_spec.utils.errors import ExcelValidationError
 
 QUESTIONS_REQUIRED_COLS = {
@@ -46,6 +46,45 @@ def _build_qtype(row: pd.Series) -> dict:
         qtype["i"] = row["auto_code"]
 
     return qtype
+
+
+def _convert_visibility_rules(parsed_rules: List[Dict[str, Any]]) -> List[Rule]:
+    """
+    Convert parsed visibility rules (dicts) to Rule objects.
+    
+    Parsed rules format:
+    - Simple condition: {"r": "Q-10", "o": "=", "v": "value"}
+    - OR conditions: {"or": [{"r": "Q-10", "o": "=", "v": "v1"}, ...]}
+    """
+    rules = []
+    
+    for rule_dict in parsed_rules:
+        if "or" in rule_dict:
+            # OR rule with multiple conditions
+            conditions = []
+            for cond_dict in rule_dict["or"]:
+                condition = Condition(
+                    ref=cond_dict["r"],
+                    operator=cond_dict["o"],
+                    value_type="v",  # Default to "v" (value)
+                    value=cond_dict["v"]
+                )
+                conditions.append(condition)
+            
+            rule = Rule(or_conditions=conditions)
+            rules.append(rule)
+        else:
+            # Simple condition
+            condition = Condition(
+                ref=rule_dict["r"],
+                operator=rule_dict["o"],
+                value_type="v",  # Default to "v" (value)
+                value=rule_dict["v"]
+            )
+            rule = Rule(condition=condition)
+            rules.append(rule)
+    
+    return rules
 
 def build_questions(
     questions_df: pd.DataFrame,
@@ -95,7 +134,16 @@ def build_questions(
         if pd.notna(row.get("roles")):
             roles = [r.strip() for r in str(row["roles"]).split(",")]
 
+        # Get visibility rules from VISIBILITY_RULES DataFrame (old system)
         visibility = rules_by_target.get(f"question:{ref}", [])
+        
+        # Also get visibility rules from question's visibility column (new system)
+        if pd.notna(row.get("visibility")) and row.get("visibility"):
+            # visibility column contains parsed rules as list of dicts
+            # Convert them to Rule objects
+            parsed_rules = row.get("visibility")
+            if isinstance(parsed_rules, list):
+                visibility = _convert_visibility_rules(parsed_rules)
 
         question = Question(
             ref=ref,

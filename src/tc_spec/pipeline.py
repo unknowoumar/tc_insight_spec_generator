@@ -140,6 +140,21 @@ def map_excel_to_machine_first(
     sections_df["order"] = range(1, len(sections_df) + 1)
     # Drop the temporary sheet_order column
     sections_df = sections_df.drop(columns=['sheet_order'])
+    
+    # Extract section visibility rules from questions_df attributes
+    section_visibility_rules = questions_df.attrs.get('section_visibility_rules', {})
+    
+    # Map sheet names to section codes for visibility rules
+    section_visibility_by_code = {}
+    for sheet_name, vis_rules in section_visibility_rules.items():
+        # Find the section code for this sheet
+        for section_code in unique_sections:
+            if section_to_sheet_name.get(section_code) == sheet_name:
+                section_visibility_by_code[section_code] = vis_rules
+                break
+    
+    # Store section visibility rules in sections_df attributes
+    sections_df.attrs['section_visibility_rules'] = section_visibility_by_code
 
     anomalies_df = pd.DataFrame(columns=["anomaly_code", "weight"])
 
